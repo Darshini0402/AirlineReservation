@@ -9,6 +9,26 @@
         }
         </style>
         <link rel="stylesheet" href="styles.css">
+        <script>
+            function openCity(evt, cityName) {
+            // Declare all variables
+            var i, tabcontent, tablinks;
+            // Get all elements with class="tabcontent" and hide them
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+            // Get all elements with class="tablinks" and remove the class "active"
+            tablinks = document.getElementsByClassName("tablinks");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+            // Show the current tab, and add an "active" class to the button that opened the tab
+            document.getElementById(cityName).style.display = "block";
+            evt.currentTarget.className += " active";
+            }
+            document.getElementById("defaultOpen").click();
+        </script>
     </head>
     <body>
         <div id="bg-image">
@@ -29,12 +49,19 @@
                     <th style="color: whitesmoke;">About Us</th>
                 </table>
                 <div class="content" style="position: absolute; text-align: center; top: 280px;">
-                    <button style="font-size: 15px;">Book Flight</button>
-                    <button style="font-size: 15px;">Check in</button>
-                    <button style="font-size: 15px;">Flight Status</button>
-                    <button style="font-size: 15px;">Edit Booking</button>
+                    <button style="font-size:15px;" class="tablinks" onclick="openCity(event, 'Book Flight')" id="defaultOpen">Book Flight</button>
+                    <button style="font-size:15px;" class="tablinks" onclick="openCity(event, 'Check In')">Check In</button>
+                    <button style="font-size:15px;" class="tablinks" onclick="openCity(event, 'Flight Status')">Flight Status</button>
+                    <button style="font-size:15px;" class="tablinks" onclick="openCity(event, 'Edit Booking')">Edit Booking</button>
                 </div>
-            </div>
-         </div>
+                <div id="Book Flight" class="tabcontent" style="text-align:center;">
+                <h1 style="font-weight: 200;font-size:larger;">Book Flight</h1>
+                        <form>
+                        <input type="radio" placeholder="One Way" name="One_Way" value="One Way">One Way
+                        <input type="radio" placeholder="Round Trip" name="One_Way" value="Round Trip">Round Trip
+                        </form>
+                </div>
+            </div>       
     </body>
 </html>
+
