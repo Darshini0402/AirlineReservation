@@ -27,6 +27,10 @@
             document.getElementById(cityName).style.display = "block";
             evt.currentTarget.className += " active";
             }
+            function openState()
+            {
+                tabcontent=document.getElementsByClassName("tabcontent");
+            }
             document.getElementById("defaultOpen").click();
         </script>
     </head>
@@ -34,8 +38,8 @@
         <div id="bg-image">
             <img src="https://thecurrent.pk/wp-content/uploads/2021/03/flights.jpg" style="width: 100%;">
             <div class="info">
-                <h1 style="font-size: 75px;font-family: 'Times New Roman', Times, serif;color: black; text-align: center;">VARIANCE AIRLINES</h1>
-                <table style="padding-left: 585px;padding-bottom: 350px;">
+                <h1 style="font-size:75px;font-family: 'Times New Roman', Times, serif;color: black; text-align: center;">VARIANCE AIRLINES</h1>
+                <table style="padding-left:585px;padding-bottom: 350px;">
                     <thead>
                         <th>Username: <input type="text" placeholder="Username"></th>
                         <th>Password: <input type="password" placeholder="Password"></th>
@@ -43,7 +47,7 @@
                         <th><a href="sign.html"><img src="https://img.icons8.com/windows/32/000000/edit-user-male--v1.png" alt="Sign-up" width="30" id="hov" style="image-resolution: 100px;"></a></th>
                     </thead>
                 </table>
-                <table style="position: absolute; text-align: center;bottom: -70px;width: 100%;">
+                <table style="position: absolute; text-align: center;bottom: -150px;width: 100%;">
                     <th style="color: whitesmoke;">Contact Us</th>
                     <th style="color: whitesmoke;">FAQ</th>
                     <th style="color: whitesmoke;">About Us</th>
@@ -55,12 +59,63 @@
                     <button style="font-size:15px;" class="tablinks" onclick="openCity(event, 'Edit Booking')">Edit Booking</button>
                 </div>
                 <div id="Book Flight" class="tabcontent" style="text-align:center;">
-                <h1 style="font-weight: 200;font-size:larger;">Book Flight</h1>
-                        <form>
-                        <input type="radio" placeholder="One Way" name="One_Way" value="One Way">One Way
-                        <input type="radio" placeholder="Round Trip" name="One_Way" value="Round Trip">Round Trip
-                        </form>
-                </div>
-            </div>       
+                        <h1 style="font-weight:200;font-size:larger;">From</h1>
+                        <div>
+                            <input name="Cities" list="List of States" placeholder="state">
+                            <datalist id="List of States">
+                                <option value="AGARTALA,TRIPURA"></option>	
+                                <option value="AGRA,UTTAR PRADESH"></option>	
+                                <option value="AHMEDABAD,GUJARAT"></option>	
+                                <option value="AIZWAL,MIZORAM"></option>	
+                                <option value="AJMER,RAJASTHAN"></option>	
+                                <option value="ALLAHABAD,UTTAR PRADESH"></option>	
+                                <option value="ALLEPPEY,KERALA"></option>	
+                                <option value="ALIBAUG,MAHARASHTRA"></option>	
+                                <option value="ALMORA,UTTARANCHAL"></option>	
+                                <option value="ALSISAR,RAJASTHAN"></option>	
+                                <option value="ALWAR,RAJASTHAN"></option>	
+                                <option value="AMBALA,HARYANA"></option>	
+                                <option value="AMLA,MADHYA PRADESH"></option>	
+                                <option value="AMRITSAR,PUNJAB"></option>
+                                <option value="ANAND,GUJARAT"></option>
+                                <option value="ANKLESHWAR,GUJARAT"></option>	
+                                <option value="ASHTAMUDI,KERALA"></option>
+                                <option value="AULI,HIMACHAL PRADESH"></option>
+                                <option value="AURANGABAD,MAHARASHTRA"></option>
+                            </datalist>
+                        </div>
+                        <h1 style="font-weight:200;font-size:larger;">To</h1>
+                        <div>
+                            <input name="Cities" list="List of States" placeholder="state">
+                            <datalist id="List of States">
+                                <option value="AGARTALA,TRIPURA"></option>	
+                                <option value="AGRA,UTTAR PRADESH"></option>	
+                                <option value="AHMEDABAD,GUJARAT"></option>	
+                                <option value="AIZWAL,MIZORAM"></option>	
+                                <option value="AJMER,RAJASTHAN"></option>	
+                                <option value="ALLAHABAD,UTTAR PRADESH"></option>	
+                                <option value="ALLEPPEY,KERALA"></option>	
+                                <option value="ALIBAUG,MAHARASHTRA"></option>	
+                                <option value="ALMORA,UTTARANCHAL"></option>	
+                                <option value="ALSISAR,RAJASTHAN"></option>	
+                                <option value="ALWAR,RAJASTHAN"></option>	
+                                <option value="AMBALA,HARYANA"></option>	
+                                <option value="AMLA,MADHYA PRADESH"></option>	
+                                <option value="AMRITSAR,PUNJAB"></option>
+                                <option value="ANAND,GUJARAT"></option>
+                                <option value="ANKLESHWAR,GUJARAT"></option>	
+                                <option value="ASHTAMUDI,KERALA"></option>
+                                <option value="AULI,HIMACHAL PRADESH"></option>
+                                <option value="AURANGABAD,MAHARASHTRA"></option>
+                            </datalist>
+                        </div>   
+                        <h1 style="font-weight:200;font-size:larger;">Departure Date</h1>
+                        <input type="date">      
+                        <h1 style="font-weight:200;font-size:larger;">Passenger</h1> 
+                        <input type="number" min="1" placeholder="Number of Passenger">  
+                        <br><br>
+                        <input type="Submit" value="Submit" >
+                    </div>
+                </div> 
     </body>
 </html>
