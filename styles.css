@@ -58,3 +58,9 @@
     position:absolute;
     bottom:-50px;
     }
+.dev_info:hover
+    {
+        background-color: #0000008a;
+        
+       
+    }
