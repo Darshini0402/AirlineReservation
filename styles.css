@@ -53,14 +53,14 @@
     /* Style the tab content */
     .tabcontent {
         background-color:rgba(173, 138, 22, 0.842);
-    display: none;
+    display:none;
     width:95.5%;
     position:absolute;
-    bottom:-50px;
+    bottom:-56px;
     }
 .dev_info:hover
     {
         background-color: #0000008a;
-        
-       
     }
+    
+
