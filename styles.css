@@ -16,13 +16,13 @@
     padding: 10px; /* Some padding */
 }
 .info .content {
-    position: absolute; /* Position the background text */
     bottom: 0; /* At the bottom. Use top:0 to append it to the top */
     background: rgb(0, 0, 0); /* Fallback color */
     background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
     color: #f1f1f1; /* Grey text */
     width: 92.5%; /* Full width */
     padding: 20px; /* Some padding */
+    height:60%;
 }
  /* Style the tab */
  .tab {
@@ -30,7 +30,6 @@
     border: 1px solid #ccc;
     background-color: #f1f1f1;
     }
-
     /* Style the buttons that are used to open the tab content */
     .tab button {
     background-color: inherit;
@@ -41,7 +40,6 @@
     padding: 14px 16px;
     transition: 0.3s;
     }
-
     /* Change background color of buttons on hover */
     .tab button:hover {
     background-color: #ddd;
@@ -56,9 +54,7 @@
     .tabcontent {
         background-color:rgba(173, 138, 22, 0.842);
     display: none;
-    width:96.8%;
-    position:relative;
-    bottom:260px;
-
-    
+    width:95.5%;
+    position:absolute;
+    bottom:-50px;
     }
