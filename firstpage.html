@@ -2,11 +2,12 @@
 <html lang="en">
     <head>
         <title>First page</title>
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
         <style>
             #hov:hover {
                 background-image: url("https://img.icons8.com/windows/32/000000/edit-user-male--v1.png");
                 background-color: whitesmoke;
-        }
+            }
         </style>
         <link rel="stylesheet" href="styles.css">
          <script src="firstpagejs.js">
@@ -37,7 +38,7 @@
                     <button style="font-size:15px;" class="tablinks" onclick="openCity(event, 'Edit Booking')">Edit Booking</button>
                 </div>
                 <div id="Book Flight" class="tabcontent" style="text-align:center;width: 35%; right:440px">
-                        <h1 style="font-weight:200;font-size:larger;">From</h1>
+                        <h1 style="font-weight:200px;font-size:larger;"><u>From</u></h1>
                         <div>
                             <input name="Cities" list="List of States" placeholder="state">
                             <datalist id="List of States">
@@ -62,7 +63,7 @@
                                 <option value="AURANGABAD,MAHARASHTRA"></option>
                             </datalist>
                         </div>
-                        <h1 style="font-weight:200;font-size:larger;">To</h1>
+                        <h1 style="font-weight:200px;font-size:larger;"><u>To</u></h1>
                         <div>
                             <input name="Cities" list="List of States" placeholder="state">
                             <datalist id="List of States">
@@ -87,16 +88,16 @@
                                 <option value="AURANGABAD,MAHARASHTRA"></option>
                             </datalist>
                         </div>   
-                        <h1 style="font-weight:200;font-size:larger;">Departure Date</h1>
-                        <input type="date">      
-                        <h1 style="font-weight:200;font-size:larger;">Passenger</h1> 
+                        <h1 style="font-weight:200px;font-size:larger;"><u>Departure Date</u></h1>
+                        <input name="somedate" type="date"> 
+                        <h1 style="font-weight:200px;font-size:larger;"><u>Passenger</u></h1> 
                         <input type="number" min="1" placeholder="Number of Passenger">  
                         <br><br>
                         <input type="Submit" value="Submit" >
                     </div>
                 </div> 
               <div id="Edit Booking" class="tabcontent" style="text-align:center;bottom:100px;background-color: rgba(173, 138, 22, 0.842);position:absolute;display:none;width: 35%; right:415px;">
-                    <h1 style="font-weight:200;font-size:larger;"><u>Edit Booking</u></h1>
+                    <h1 style="font-weight:200px;font-size:larger;"><u>Edit Booking</u></h1>
                     <input type="text" placeholder="Ticket number">
                     <br><br>
                     <input type="Submit" value="Submit">
