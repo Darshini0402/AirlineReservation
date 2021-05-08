@@ -44,6 +44,9 @@
     .tab button:hover {
     background-color: #ddd;
     }
+    .cancel:hover {
+        background-color: rgba(250, 26, 26, 0.836);
+        }
 
     /* Create an active/current tablink class */
     .tab button.active {
@@ -62,5 +65,12 @@
     {
         background-color: #0000008a;
     }
-    
+    button:hover{
+        background-color: #40b6e0;
+
+    }
+    .login:hover{
+        background-color: #40e083;
+
+    }
 
