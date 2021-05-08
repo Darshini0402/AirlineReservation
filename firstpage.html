@@ -96,11 +96,80 @@
                         <input type="Submit" value="Submit" >
                     </div>
                 </div> 
-              <div id="Edit Booking" class="tabcontent" style="text-align:center;bottom:100px;background-color: rgba(173, 138, 22, 0.842);position:absolute;display:none;width: 35%; right:415px;">
+              <div id="Edit Booking" class="tabcontent" style="text-align:center;bottom:50px;background-color: rgba(173, 138, 22, 0.842);position:absolute;display:none;width: 35%; right:415px;">
                     <h1 style="font-weight:200px;font-size:larger;"><u>Edit Booking</u></h1>
                     <input type="text" placeholder="Ticket number">
                     <br><br>
+                    View/Change Booking<br><br>
+                    Add Services<br><br>
+                    Cancel Booking <br><br>
                     <input type="Submit" value="Submit">
                 </div>
+                <div id="Flight Status" class="tabcontent" style="text-align:center;bottom:100px;background-color: rgba(173, 138, 22, 0.842);position:absolute;display:none;width: 35%; right:415px;">
+                   <h1 style="font-weight:200px;font-size:larger;">Search From</h1>
+                    <input type="radio" class="tablinks" value="Ticket Number" onclick="openCity(event, 'Ticket Number')">
+                    Ticket Number
+                    <input type="radio" class="tablinks" value="From,To and Date" onclick="openCity(event, 'From,To and Date')">
+                    From,To and Date
+                    </div>
+                    <div id="Ticket Number" class="tabcontent" style="text-align:center;bottom:100px;background-color: rgba(173, 138, 22, 0.842);position:absolute;display:none;width: 35%; right:415px;">
+                         Enter your ticket number
+                        <input type="text" value="Ticket Number">
+                    </div>
+                    <div id="From,To and Date" class="tabcontent" style="text-align:center;bottom:50px;background-color: rgba(173, 138, 22, 0.842);position:absolute;display:none;width: 35%; right:415px;">
+                        <h1 style="font-weight:200px;font-size:larger;"><u>From</u></h1>
+                        <div>
+                            <input name="Cities" list="List of States" placeholder="state">
+                            <datalist id="List of States">
+                                <option value="AGARTALA,TRIPURA"></option>	
+                                <option value="AGRA,UTTAR PRADESH"></option>	
+                                <option value="AHMEDABAD,GUJARAT"></option>	
+                                <option value="AIZWAL,MIZORAM"></option>	
+                                <option value="AJMER,RAJASTHAN"></option>	
+                                <option value="ALLAHABAD,UTTAR PRADESH"></option>	
+                                <option value="ALLEPPEY,KERALA"></option>	
+                                <option value="ALIBAUG,MAHARASHTRA"></option>	
+                                <option value="ALMORA,UTTARANCHAL"></option>	
+                                <option value="ALSISAR,RAJASTHAN"></option>	
+                                <option value="ALWAR,RAJASTHAN"></option>	
+                                <option value="AMBALA,HARYANA"></option>	
+                                <option value="AMLA,MADHYA PRADESH"></option>	
+                                <option value="AMRITSAR,PUNJAB"></option>
+                                <option value="ANAND,GUJARAT"></option>
+                                <option value="ANKLESHWAR,GUJARAT"></option>	
+                                <option value="ASHTAMUDI,KERALA"></option>
+                                <option value="AULI,HIMACHAL PRADESH"></option>
+                                <option value="AURANGABAD,MAHARASHTRA"></option>
+                            </datalist>
+                        </div>
+                        <h1 style="font-weight:200px;font-size:larger;"><u>To</u></h1>
+                        <div>
+                            <input name="Cities" list="List of States" placeholder="state">
+                            <datalist id="List of States">
+                                <option value="AGARTALA,TRIPURA"></option>	
+                                <option value="AGRA,UTTAR PRADESH"></option>	
+                                <option value="AHMEDABAD,GUJARAT"></option>	
+                                <option value="AIZWAL,MIZORAM"></option>	
+                                <option value="AJMER,RAJASTHAN"></option>	
+                                <option value="ALLAHABAD,UTTAR PRADESH"></option>	
+                                <option value="ALLEPPEY,KERALA"></option>	
+                                <option value="ALIBAUG,MAHARASHTRA"></option>	
+                                <option value="ALMORA,UTTARANCHAL"></option>	
+                                <option value="ALSISAR,RAJASTHAN"></option>	
+                                <option value="ALWAR,RAJASTHAN"></option>	
+                                <option value="AMBALA,HARYANA"></option>	
+                                <option value="AMLA,MADHYA PRADESH"></option>	
+                                <option value="AMRITSAR,PUNJAB"></option>
+                                <option value="ANAND,GUJARAT"></option>
+                                <option value="ANKLESHWAR,GUJARAT"></option>	
+                                <option value="ASHTAMUDI,KERALA"></option>
+                                <option value="AULI,HIMACHAL PRADESH"></option>
+                                <option value="AURANGABAD,MAHARASHTRA"></option>
+                            </datalist>
+                        </div>   
+                        <h1 style="font-weight:200px;font-size:larger;"><u>Departure Date</u></h1>
+                        <input name="somedate" type="date"> 
+                        </div>
+                        
     </body>
 </html>
