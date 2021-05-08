@@ -24,3 +24,5 @@ function openCity(evt, cityName) {
     {
         alert("Feel free to call or message anytime:\nDarshini:+919840336198\nDikshita:+918130263296\nShubhangi: +917479577601\nSreelakshmi: +971566428580");
     }
+    var today = new Date().toISOString().split('T')[0];
+    document.getElementsByName("somedate")[0].setAttribute('min', today);
