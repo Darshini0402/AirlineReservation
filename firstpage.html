@@ -12,6 +12,21 @@
         <link rel="stylesheet" href="styles.css">
          <script src="firstpagejs.js">
         </script>
+        <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+		<script language="javascript">
+			$( document ).ready(function() {
+				   var now = new Date();
+
+					var day = ("0" + now.getDate()).slice(-2);
+					var month = ("0" + (now.getMonth() + 1)).slice(-2);
+
+					var today = now.getFullYear() + "-" + (month) + "-" + (day);
+
+					$('#ExpiryDate').val(today);
+					$('#ExpiryDate').attr('min', today);
+			});
+		</script>
+         <script src="firstpagejs.js"> </script>
     </head>
     <body>
         <div id="bg-image">
@@ -71,7 +86,7 @@
                             
                         </div>   
                         <h1 style="font-weight:200px;font-size:larger;"><u>Departure Date</u></h1>
-                        <input name="somedate" type="date"> 
+                        <input id = "ExpiryDate" type='date' /><br> 
                         <h1 style="font-weight:200px;font-size:larger;"><u>Passenger</u></h1> 
                         <input type="number" min="1" placeholder="Number of Passenger">  
                         <br><br>
@@ -86,7 +101,7 @@
                     <button style="font-size:15px;" class="tablinks" onclick="openCity(event, 'Add Services')">Add Services</button><br><br>
                     <div id="Add Services" class="tabcontent" style="text-align:center;width: 35%; right:440px">
                     <h1 style="font-weight:200px;font-size:larger;"><u>Add Services</u></h1>
-
+                   
                     </div>
                     <button class='cancel' onclick='confirm("Press OK to cancel your ticket")'>Cancel Booking</button> <br><br>
                 </div>

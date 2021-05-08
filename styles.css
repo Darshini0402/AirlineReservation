@@ -66,11 +66,15 @@
         background-color: #0000008a;
     }
     button:hover{
-        background-color: #40b6e0;
+        background-color: #9575cd;
 
     }
     .login:hover{
         background-color: #40e083;
 
     }
+    .container[_ngcontent-msf-c3] {
+        width: 32vw;
+        margin-left: 3vw;
+        padding-left: .01vw;}
 
