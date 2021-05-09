@@ -1,6 +1,6 @@
 .bg-image
 {
-    background-image: url("flight.jpg");
+    background-image: url("https://thecurrent.pk/wp-content/uploads/2021/03/flights.jpg");
     height: 100%;
     filter: blur(8px);
     -webkit-filter: blur(8px);
