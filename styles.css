@@ -1,13 +1,4 @@
-.bg-image
-{
-    background-image: url("flight.jpg");
-    height: 100%;
-    filter: blur(8px);
-    -webkit-filter: blur(8px);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
+
 .info
 {
     position: absolute; /* Position the background text */
@@ -22,7 +13,7 @@
     color: #f1f1f1; /* Grey text */
     width: 92.5%; /* Full width */
     padding: 20px; /* Some padding */
-    height:60%;
+    height: 40%;
 }
  /* Style the tab */
  .tab {
@@ -61,7 +52,7 @@
     position:absolute;
     bottom:-56px;
     }
-.dev_info:hover
+    .dev_info:hover
     {
         background-color: #0000008a;
     }

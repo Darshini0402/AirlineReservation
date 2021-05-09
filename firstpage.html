@@ -8,11 +8,21 @@
                 background-image: url("https://img.icons8.com/windows/32/000000/edit-user-male--v1.png");
                 background-color: whitesmoke;
             }
-	@media(min-width:800px)
-            {
-                body{
-                    background-color:palevioletred;
+            #bg-image {
+                /* The image used */
+                background-image: url("https://thecurrent.pk/wp-content/uploads/2021/03/flights.jpg");
+
+                /* Full height */
+                height: 100%;
+
+                /* Center and scale the image nicely */
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
                 }
+            body, html {
+                height: 100%;
+                margin: 0;
             }
         </style>
         <link rel="stylesheet" href="styles.css">
@@ -35,8 +45,7 @@
          <script src="firstpagejs.js"> </script>
     </head>
     <body>
-        <div id="bg-image">
-            <img src="https://thecurrent.pk/wp-content/uploads/2021/03/flights.jpg" style="width: 100%;">
+        <div id="bg-image"></div>
             <div class="info">
                 <h1 style="font-size:75px;font-family: 'Times New Roman', Times, serif;color: black; text-align: center;">VARIANCE AIRLINES</h1>
                 <table style="padding-left:585px;padding-bottom: 350px;">
@@ -49,7 +58,7 @@
                         <th><a href="sign.html"><img src="https://img.icons8.com/windows/32/000000/edit-user-male--v1.png" alt="Sign-up" width="30" id="hov" style="image-resolution: 100px;"></a></th>
                     </thead>
                 </table>
-                <table style="position: absolute; text-align: center;bottom: -150px;width: 100%;">
+                <table style="position: absolute; text-align: center;bottom: 0px;width: 100%;">
                     <th class="dev_info" onclick="contact()" style="color: whitesmoke;">Contact Us</th>
                     <th class="dev_info" style="color: whitesmoke;">FAQ</th>
                     <th class="dev_info" style="color: whitesmoke;">About Us</th>
