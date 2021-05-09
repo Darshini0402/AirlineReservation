@@ -1,0 +1,1378 @@
+
+
+<!DOCTYPE html>
+<html lang="en-gb" >
+<head>
+    <base href="http://demo.themeparrot.com/shopy/index.php" />
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<meta name="description" content="Shopy is a shopping cart for joomla" />
+<meta name="generator" content="MYOB" />
+<title>Home</title>
+<link href="/shopy/index.php?format=feed&amp;type=rss" rel="alternate" type="application/rss+xml" title="RSS 2.0" />
+<link href="/shopy/index.php?format=feed&amp;type=atom" rel="alternate" type="application/atom+xml" title="Atom 1.0" />
+<link href="/shopy/templates/shopy/favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon" />
+<link href="http://demo.themeparrot.com/shopy/index.php/component/search/?Itemid=101&amp;format=opensearch" rel="search" title="Search Shopy" type="application/opensearchdescription+xml" />
+<link href="/shopy/t3-assets/dev/templates.shopy.less.bootstrap.less.css" rel="stylesheet" type="text/css" />
+<link href="/shopy/templates/system/css/system.css" rel="stylesheet" type="text/css" />
+<link href="/shopy/t3-assets/dev/plugins.system.t3.base-bs3.less.t3.less.css" rel="stylesheet" type="text/css" />
+<link href="/shopy/t3-assets/dev/templates.shopy.less.core.less.css" rel="stylesheet" type="text/css" />
+<link href="/shopy/t3-assets/dev/templates.shopy.less.typography.less.css" rel="stylesheet" type="text/css" />
+<link href="/shopy/t3-assets/dev/templates.shopy.less.forms.less.css" rel="stylesheet" type="text/css" />
+<link href="/shopy/t3-assets/dev/templates.shopy.less.navigation.less.css" rel="stylesheet" type="text/css" />
+<link href="/shopy/t3-assets/dev/templates.shopy.less.navbar.less.css" rel="stylesheet" type="text/css" />
+<link href="/shopy/t3-assets/dev/templates.shopy.less.modules.less.css" rel="stylesheet" type="text/css" />
+<link href="/shopy/t3-assets/dev/templates.shopy.less.joomla.less.css" rel="stylesheet" type="text/css" />
+<link href="/shopy/t3-assets/dev/templates.shopy.less.components.less.css" rel="stylesheet" type="text/css" />
+<link href="/shopy/t3-assets/dev/templates.shopy.less.style.less.css" rel="stylesheet" type="text/css" />
+<link href="/shopy/t3-assets/dev/templates.shopy.less.template.less.css" rel="stylesheet" type="text/css" />
+<link href="/shopy/t3-assets/dev/plugins.system.t3.base-bs3.less.megamenu.less.css" rel="stylesheet" type="text/css" />
+<link href="/shopy/t3-assets/dev/templates.shopy.less.megamenu.less.css" rel="stylesheet" type="text/css" />
+<link href="/shopy/t3-assets/dev/plugins.system.t3.base-bs3.less.off-canvas.less.css" rel="stylesheet" type="text/css" />
+<link href="/shopy/t3-assets/dev/templates.shopy.less.off-canvas.less.css" rel="stylesheet" type="text/css" />
+<link href="/shopy/templates/shopy/fonts/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+<link href="https://fonts.googleapis.com/css?family=Slabo+27px" rel="stylesheet" type="text/css" />
+<link href="/shopy/templates/shopy/html/mod_j2products/Bootstrap3/assets/mod_j2products.css" rel="stylesheet" type="text/css" />
+<link href="/shopy/media/system/css/modal.css" rel="stylesheet" type="text/css" />
+<link href="http://demo.themeparrot.com/shopy/modules/mod_j2store_cart/css/j2store_cart.css" rel="stylesheet" type="text/css" />
+<style type="text/css">
+
+	</style>
+<script src="/shopy/media/jui/js/jquery.min.js" type="text/javascript"></script>
+<script src="/shopy/media/jui/js/jquery-noconflict.js" type="text/javascript"></script>
+<script src="/shopy/media/jui/js/jquery-migrate.min.js" type="text/javascript"></script>
+<script src="/shopy/media/system/js/caption.js" type="text/javascript"></script>
+<script src="/shopy/plugins/system/t3/base-bs3/bootstrap/js/bootstrap.js" type="text/javascript"></script>
+<script src="/shopy/plugins/system/t3/base-bs3/js/jquery.tap.min.js" type="text/javascript"></script>
+<script src="/shopy/plugins/system/t3/base-bs3/js/off-canvas.js" type="text/javascript"></script>
+<script src="/shopy/plugins/system/t3/base-bs3/js/script.js" type="text/javascript"></script>
+<script src="/shopy/plugins/system/t3/base-bs3/js/menu.js" type="text/javascript"></script>
+<script src="/shopy/templates/shopy/js/script.js" type="text/javascript"></script>
+<script src="/shopy/media/j2store/js/j2store.js" type="text/javascript"></script>
+<script src="http://demo.themeparrot.com/shopy//templates/shopy/html/mod_j2products/Bootstrap3/assets/mod_j2products.js" type="text/javascript"></script>
+<script src="/shopy/plugins/j2store/app_productcompare/app_productcompare/assets/js/compare.js" type="text/javascript"></script>
+<script src="/shopy/media/system/js/mootools-core.js" type="text/javascript"></script>
+<script src="/shopy/media/system/js/core.js" type="text/javascript"></script>
+<script src="/shopy/media/system/js/mootools-more.js" type="text/javascript"></script>
+<script src="/shopy/media/system/js/modal.js" type="text/javascript"></script>
+<script src="/shopy/media/system/js/html5fallback.js" type="text/javascript"></script>
+<script src="/shopy/media/j2store/js/j2store.namespace.js" type="text/javascript"></script>
+<script src="/shopy/media/j2store/js/jquery-ui.min.js" type="text/javascript"></script>
+<script src="/shopy/media/j2store/js/jquery-ui-timepicker-addon.js" type="text/javascript"></script>
+<script src="/shopy/media/j2store/js/jquery.zoom.js" type="text/javascript"></script>
+<script type="text/javascript">
+
+		var j2storeURL = 'http://demo.themeparrot.com/shopy/';
+		
+jQuery(window).on('load',  function() {
+				new JCaption('img.caption');
+			});
+		jQuery(function($) {
+			SqueezeBox.initialize({});
+			SqueezeBox.assign($('a.modal').get(), {
+				parse: 'rel'
+			});
+		});
+
+		window.jModalClose = function () {
+			SqueezeBox.close();
+		};
+		
+		// Add extra modal close functionality for tinyMCE-based editors
+		document.onreadystatechange = function () {
+			if (document.readyState == 'interactive' && typeof tinyMCE != 'undefined' && tinyMCE)
+			{
+				if (typeof window.jModalClose_no_tinyMCE === 'undefined')
+				{	
+					window.jModalClose_no_tinyMCE = typeof(jModalClose) == 'function'  ?  jModalClose  :  false;
+					
+					jModalClose = function () {
+						if (window.jModalClose_no_tinyMCE) window.jModalClose_no_tinyMCE.apply(this, arguments);
+						tinyMCE.activeEditor.windowManager.close();
+					};
+				}
+		
+				if (typeof window.SqueezeBoxClose_no_tinyMCE === 'undefined')
+				{
+					if (typeof(SqueezeBox) == 'undefined')  SqueezeBox = {};
+					window.SqueezeBoxClose_no_tinyMCE = typeof(SqueezeBox.close) == 'function'  ?  SqueezeBox.close  :  false;
+		
+					SqueezeBox.close = function () {
+						if (window.SqueezeBoxClose_no_tinyMCE)  window.SqueezeBoxClose_no_tinyMCE.apply(this, arguments);
+						tinyMCE.activeEditor.windowManager.close();
+					};
+				}
+			}
+		};
+		
+
+if(typeof(j2store) == 'undefined') {
+	var j2store = {};
+}
+if(typeof(j2store.jQuery) == 'undefined') {
+	j2store.jQuery = jQuery.noConflict();
+}		
+(function($) {
+	$(document).bind('after_adding_to_cart', function(element,data, type){
+
+		var murl = '/shopy/index.php/component/j2store/carts/ajaxmini';
+
+		$.ajax({
+			url : murl,
+			type : 'get',
+			cache : false,
+			contentType : 'application/json; charset=utf-8',
+			dataType : 'json',
+			success : function(json) {
+				if (json != null && json['response']) {
+					$.each(json['response'], function(key, value) {
+						if ($('.j2store_cart_module_' + key).length) {
+							$('.j2store_cart_module_' + key).each(function() {
+								$(this).html(value);
+							});
+						}
+					});
+				}
+			}
+
+		});
+
+	});
+})(j2store.jQuery);
+		
+			if(typeof(j2store) == 'undefined') {
+				var j2store = {};
+			}
+
+	if(typeof(jQuery) != 'undefined') {
+		jQuery.noConflict();
+	}
+
+	if(typeof(j2store.jQuery) == 'undefined') {
+		j2store.jQuery = jQuery.noConflict();
+	}
+
+	if(typeof(j2store.jQuery) != 'undefined') {
+
+		(function($) {
+			$(document).ready(function(){
+				//date, time, datetime
+
+				if( $('.j2store_date').length ){
+					$('.j2store_date').datepicker({dateFormat: 'yy-mm-dd'});
+				}
+
+				if($('.j2store_datetime').length){
+					$('.j2store_datetime').datetimepicker({
+							dateFormat: 'yy-mm-dd',
+							timeFormat: 'HH:mm',
+							
+			currentText: 'Now',
+			closeText: 'Done',
+			timeOnlyTitle: 'Choose Time',
+			timeText: 'Time',
+			hourText: 'Hour',
+			minuteText: 'Minute',
+			secondText: 'Seconds',
+			millisecText: 'Milliseconds',
+			timezoneText: 'Time Zone'
+			
+					});
+				}
+
+				if($('.j2store_time').length){
+					$('.j2store_time').timepicker({timeFormat: 'HH:mm', 
+			currentText: 'Now',
+			closeText: 'Done',
+			timeOnlyTitle: 'Choose Time',
+			timeText: 'Time',
+			hourText: 'Hour',
+			minuteText: 'Minute',
+			secondText: 'Seconds',
+			millisecText: 'Milliseconds',
+			timezoneText: 'Time Zone'
+			});
+				}
+
+			});
+		})(j2store.jQuery);
+	}
+	
+	</script>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+<style type="text/stylesheet">
+		@-webkit-viewport   { width: device-width; }
+		@-moz-viewport      { width: device-width; }
+		@-ms-viewport       { width: device-width; }
+		@-o-viewport        { width: device-width; }
+		@viewport           { width: device-width; }
+	</style>
+<script type="text/javascript">
+		//<![CDATA[
+		if (navigator.userAgent.match(/IEMobile\/10\.0/)) {
+			var msViewportStyle = document.createElement("style");
+			msViewportStyle.appendChild(
+				document.createTextNode("@-ms-viewport{width:auto!important}")
+			);
+			document.getElementsByTagName("head")[0].appendChild(msViewportStyle);
+		}
+		//]]>
+	</script>
+<meta name="HandheldFriendly" content="true" />
+<meta name="apple-mobile-web-app-capable" content="YES" />
+
+
+<!--[if lt IE 9]>
+<script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<script type="text/javascript" src="/shopy/plugins/system/t3/base-bs3/js/respond.min.js"></script>
+<![endif]-->
+
+</head>
+<body>
+<div id="preloader"></div>
+<div class="t3-wrapper"> 
+
+<nav id="t3-topbar" class="t3-topbar">
+<div class="container">
+<div class="row">
+<div class="col-md-6 col-sm-6 col-xs-12 text-left ">
+<div class="pull-left">
+<script type="text/javascript">
+<!--
+if(typeof(j2store) == 'undefined') {
+	var j2store = {};
+}
+if(typeof(j2store.jQuery) == 'undefined') {
+	j2store.jQuery = jQuery.noConflict();
+}
+
+//-->
+</script>
+<style type="text/css">
+#j2store_currency {
+background: #ffffff;
+color: #000000;
+}
+
+#j2store_currency a {
+color: #cccccc;
+}
+
+#j2store_currency a.active {
+color: #000000;
+}
+
+
+#j2store_currency a:hover {
+color: #000000;
+}
+
+</style>
+<div class="j2store ">
+<form action="/shopy/index.php" method="post" enctype="multipart/form-data">
+<div id="j2store_currency">
+<a title="INR" onclick="j2store.jQuery('input[name=\'currency_code\']').attr('value', 'INR'); j2store.jQuery(this).parent().parent().submit();">₹</a>
+<a class="active" title="USD"><b>$</b></a>
+<a title="EUR" onclick="j2store.jQuery('input[name=\'currency_code\']').attr('value', 'EUR'); j2store.jQuery(this).parent().parent().submit();">€</a>
+<a title="JPY" onclick="j2store.jQuery('input[name=\'currency_code\']').attr('value', 'JPY'); j2store.jQuery(this).parent().parent().submit();">¥</a>
+<input type="hidden" name="currency_code" value="" />
+<input type="hidden" name="option" value="com_j2store" />
+<input type="hidden" name="view" value="carts" />
+<input type="hidden" name="task" value="setcurrency" />
+<input type="hidden" name="redirect" value="aHR0cDovL2RlbW8udGhlbWVwYXJyb3QuY29tL3Nob3B5L2luZGV4LnBocA==" />
+</div>
+</form>
+</div>
+</div>
+</div>
+<div class="col-md-6 col-sm-6 col-xs-12 right-topbar">
+<div class="">
+<ul class="nav menu">
+<li class="item-149"><a href="/shopy/index.php/login">Login</a></li><li class="item-127"><a href="/shopy/index.php/product-compare">Compare</a></li><li class="item-162"><a href="/shopy/index.php/checkout">Checkout</a></li></ul>
+</div>
+</div>
+</div>
+</div>
+</nav>
+
+
+<header id="t3-header" class="container t3-header">
+<div class="row">
+
+<div class="col-md-5 col-xs-12 col-sm-5 logo">
+<div class="logo-text">
+<a href="http://demo.themeparrot.com/shopy/" title="Shopy">
+<span>Shopy</span>
+<span style="" class="logo-txt"></span>
+<span class="site-slogan">Online Shop</span>
+</a>
+</div>
+</div>
+
+<div class="col-md-7 col-xs-12 col-sm-7 right-bar">
+
+<div class="col-sm-8 head-search ">
+<div class="search">
+<form action="/shopy/index.php" method="post" class="form-inline form-search">
+<label for="mod-search-searchword" class="element-invisible">Search ...</label> <input name="searchword" id="mod-search-searchword" maxlength="200" class="form-control search-query" type="search" size="20" placeholder="Search ..." /> <input type="hidden" name="task" value="search" />
+<input type="hidden" name="option" value="com_search" />
+<input type="hidden" name="Itemid" value="110" />
+</form>
+</div>
+</div>
+
+
+<div class="col-sm-4 languageswitcherload dropdown nav-search pull-right">
+<a data-toggle="" href="/shopy/index.php/component/j2store/carts" class="dropdown-toggle">
+<i class="fa fa-shopping-cart"></i>
+</a>
+<div class="mod-cart">
+<div class="j2store_cart_module_100">
+No items in cart
+<div class="j2store-minicart-button">
+<a class="link" href="/shopy/index.php/component/j2store/carts">
+View Cart </a>
+</div>
+ </div>
+</div>
+</div>
+
+</div>
+</div>
+</header>
+
+
+<nav id="t3-mainnav" class="wrap navbar navbar-default t3-mainnav">
+<div class="container">
+
+<div class="navbar-header pull-right">
+
+<button class="btn btn-primary off-canvas-toggle  hidden-lg hidden-md" type="button" data-pos="right" data-nav="#t3-off-canvas" data-effect="off-canvas-effect-4">
+<i class="fa fa-bars"></i>
+</button>
+
+<div id="t3-off-canvas" class="t3-off-canvas  hidden-lg hidden-md">
+<div class="t3-off-canvas-header">
+<h2 class="t3-off-canvas-header-title">Sidebar</h2>
+<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+</div>
+<div class="t3-off-canvas-body">
+<div class="t3-module module " id="Mod102"><div class="module-inner"><div class="module-ct"><ul class="nav menu">
+<li class="item-101 current active"><a href="/shopy/index.php">Home</a></li><li class="item-111 deeper parent"><a href="#">Catalog</a><ul class="nav-child unstyled small"><li class="item-153 divider deeper parent"><span class="separator ">Product Category</span>
+<ul class="nav-child unstyled small"><li class="item-110"><a href="/shopy/index.php/catalog/product-category/jewels">Jewels</a></li><li class="item-112"><a href="/shopy/index.php/catalog/product-category/anklets">Anklets</a></li><li class="item-113"><a href="/shopy/index.php/catalog/product-category/bracelets">Bracelets</a></li><li class="item-116"><a href="/shopy/index.php/catalog/product-category/brooches">Brooches</a></li><li class="item-117"><a href="/shopy/index.php/catalog/product-category/earrings">Earrings</a></li><li class="item-128"><a href="/shopy/index.php/catalog/product-category/necklace">Necklace</a></li><li class="item-129"><a href="/shopy/index.php/catalog/product-category/hand-rings">Hand Rings</a></li></ul></li></ul></li><li class="item-120 deeper parent"><a href="#">Pages</a><ul class="nav-child unstyled small"><li class="item-154"><a href="/shopy/index.php/pages/compare">Product Compare</a></li><li class="item-156"><a href="/shopy/index.php/pages/login-page">Login page</a></li><li class="item-157"><a href="/shopy/index.php/pages/registration">Registration</a></li><li class="item-160"><a href="/shopy/index.php/pages/my-account">My Account</a></li><li class="item-159"><a href="/shopy/index.php/pages/checkout-page">Checkout Page</a></li></ul></li><li class="item-118 deeper parent"><a href="#">Features</a><ul class="nav-child unstyled small"><li class="item-139 divider deeper parent"><span class="separator ">Shop Category</span>
+<ul class="nav-child unstyled small"><li class="item-130"><a href="/shopy/index.php/features/shop-category/left-sidebar">Left Sidebar</a></li><li class="item-131"><a href="/shopy/index.php/features/shop-category/right-sidebar">Right Sidebar</a></li><li class="item-132"><a href="/shopy/index.php/features/shop-category/without-sidebar">Without Sidebar</a></li><li class="item-140"><a href="/shopy/index.php/features/shop-category/2-column-product">2 column product</a></li><li class="item-141"><a href="/shopy/index.php/features/shop-category/3-column-product">3 column product</a></li><li class="item-142"><a href="/shopy/index.php/features/shop-category/4-column-product">4 column product</a></li></ul></li><li class="item-143 divider deeper parent"><span class="separator ">Shop Product</span>
+<ul class="nav-child unstyled small"><li class="item-144"><a href="/shopy/index.php/catalog/product-category/jewels/fashion-bangle">Single Product</a></li><li class="item-145"><a href="/shopy/index.php/catalog/product-category/brooches/variable-product">variable Product</a></li><li class="item-148"><a href="/shopy/index.php/catalog/product-category/necklace/configurable-product">Configurable Product</a></li><li class="item-158"><a href="/shopy/index.php/catalog/product-category/hand-rings/downloadable-product">Downloadable Product</a></li></ul></li></ul></li><li class="item-115 deeper parent"><a href="#">Blog</a><ul class="nav-child unstyled small"><li class="item-133"><a href="/shopy/index.php/blog/single-blog">Single Blog</a></li><li class="item-137"><a href="/shopy/index.php/blog/with-sidebar">With sidebar</a></li><li class="item-136"><a href="/shopy/index.php/blog/single-column-layout">single column Layout</a></li><li class="item-134"><a href="/shopy/index.php/blog/2-column-layout">2 column Layout</a></li><li class="item-135"><a href="/shopy/index.php/blog/3-column-layout">3 column Layout</a></li></ul></li><li class="item-138"><a href="/shopy/index.php/contact-us">Contact Us</a></li></ul>
+</div></div></div>
+</div>
+</div>
+
+</div>
+<div class="t3-navbar navbar-collapse collapse">
+<div class="t3-megamenu" data-responsive="true">
+<ul itemscope itemtype="http://www.schema.org/SiteNavigationElement" class="nav navbar-nav level0">
+<li itemprop='name' class="current active" data-id="101" data-level="1">
+<a itemprop='url' class="" href="/shopy/index.php" data-target="#">Home </a>
+</li>
+<li itemprop='name' class="dropdown mega sub-hidden-collapse" data-id="111" data-level="1" data-hidewcol="1">
+<a itemprop='url' class=" dropdown-toggle" href="#" data-target="#" data-toggle="dropdown">Catalog<em class="caret"></em></a>
+<div class="nav-child dropdown-menu mega-dropdown-menu" style="width: 600px" data-width="600"><div class="mega-dropdown-inner">
+<div class="row">
+<div class="col-xs-6 mega-col-nav" data-width="6"><div class="mega-inner">
+<ul itemscope itemtype="http://www.schema.org/SiteNavigationElement" class="mega-nav level1">
+<li itemprop='name' class="mega mega-group" data-id="153" data-level="2" data-group="1">
+<span class=" dropdown-header mega-group-title separator" data-target="#"> Product Category</span>
+<div class="nav-child mega-group-ct"><div class="mega-dropdown-inner">
+<div class="row">
+<div class="col-xs-12 mega-col-nav" data-width="12"><div class="mega-inner">
+<ul itemscope itemtype="http://www.schema.org/SiteNavigationElement" class="mega-nav level2">
+<li itemprop='name' data-id="110" data-level="3">
+<a itemprop='url' class="" href="/shopy/index.php/catalog/product-category/jewels" data-target="#">Jewels </a>
+</li>
+<li itemprop='name' data-id="112" data-level="3">
+<a itemprop='url' class="" href="/shopy/index.php/catalog/product-category/anklets" data-target="#">Anklets </a>
+</li>
+<li itemprop='name' data-id="113" data-level="3">
+<a itemprop='url' class="" href="/shopy/index.php/catalog/product-category/bracelets" data-target="#">Bracelets </a>
+</li>
+<li itemprop='name' data-id="116" data-level="3">
+<a itemprop='url' class="" href="/shopy/index.php/catalog/product-category/brooches" data-target="#">Brooches </a>
+</li>
+<li itemprop='name' data-id="117" data-level="3">
+<a itemprop='url' class="" href="/shopy/index.php/catalog/product-category/earrings" data-target="#">Earrings </a>
+</li>
+<li itemprop='name' data-id="128" data-level="3">
+<a itemprop='url' class="" href="/shopy/index.php/catalog/product-category/necklace" data-target="#">Necklace </a>
+</li>
+<li itemprop='name' data-id="129" data-level="3">
+<a itemprop='url' class="" href="/shopy/index.php/catalog/product-category/hand-rings" data-target="#">Hand Rings </a>
+</li>
+</ul>
+</div></div>
+</div>
+</div></div>
+</li>
+</ul>
+</div></div>
+<div class="col-xs-6 mega-col-module" data-width="6" data-position="132"><div class="mega-inner">
+<div class="t3-module module " id="Mod132"><div class="module-inner"><div class="module-ct">
+<div class="custom">
+<div class="overlay-menu"><span>OFFER <big>15%</big></span>
+<a href="/shopy/index.php/catalog/product-category/necklace"> <img src="/shopy/images/Themeparrot/Slider/menu1.jpg" alt="menu" class="img-catelog img-responsive" /></a>
+</div></div>
+</div></div></div>
+</div></div>
+</div>
+</div></div>
+</li>
+<li itemprop='name' class="dropdown mega" data-id="120" data-level="1">
+<a itemprop='url' class=" dropdown-toggle" href="#" data-target="#" data-toggle="dropdown">Pages<em class="caret"></em></a>
+<div class="nav-child dropdown-menu mega-dropdown-menu"><div class="mega-dropdown-inner">
+<div class="row">
+<div class="col-xs-12 mega-col-nav" data-width="12"><div class="mega-inner">
+<ul itemscope itemtype="http://www.schema.org/SiteNavigationElement" class="mega-nav level1">
+<li itemprop='name' data-id="154" data-level="2">
+<a itemprop='url' class="" href="/shopy/index.php/pages/compare" data-target="#">Product Compare </a>
+</li>
+<li itemprop='name' data-id="156" data-level="2">
+<a itemprop='url' class="" href="/shopy/index.php/pages/login-page" data-target="#">Login page </a>
+</li>
+<li itemprop='name' data-id="157" data-level="2">
+<a itemprop='url' class="" href="/shopy/index.php/pages/registration" data-target="#">Registration </a>
+</li>
+<li itemprop='name' data-id="160" data-level="2">
+<a itemprop='url' class="" href="/shopy/index.php/pages/my-account" data-target="#">My Account </a>
+</li>
+<li itemprop='name' data-id="159" data-level="2">
+<a itemprop='url' class="" href="/shopy/index.php/pages/checkout-page" data-target="#">Checkout Page </a>
+</li>
+</ul>
+</div></div>
+</div>
+</div></div>
+</li>
+<li itemprop='name' class="dropdown mega" data-id="118" data-level="1">
+<a itemprop='url' class=" dropdown-toggle" href="#" data-target="#" data-toggle="dropdown">Features<em class="caret"></em></a>
+<div class="nav-child dropdown-menu mega-dropdown-menu" style="width: 600px" data-width="600"><div class="mega-dropdown-inner">
+<div class="row">
+<div class="col-xs-6 mega-col-nav" data-width="6"><div class="mega-inner">
+<ul itemscope itemtype="http://www.schema.org/SiteNavigationElement" class="mega-nav level1">
+<li itemprop='name' class="mega mega-group" data-id="139" data-level="2" data-group="1">
+<span class=" dropdown-header mega-group-title separator" data-target="#"> Shop Category</span>
+<div class="nav-child mega-group-ct"><div class="mega-dropdown-inner">
+<div class="row">
+<div class="col-xs-12 mega-col-nav" data-width="12"><div class="mega-inner">
+<ul itemscope itemtype="http://www.schema.org/SiteNavigationElement" class="mega-nav level2">
+<li itemprop='name' data-id="130" data-level="3">
+<a itemprop='url' class="" href="/shopy/index.php/features/shop-category/left-sidebar" data-target="#">Left Sidebar </a>
+</li>
+<li itemprop='name' data-id="131" data-level="3">
+<a itemprop='url' class="" href="/shopy/index.php/features/shop-category/right-sidebar" data-target="#">Right Sidebar </a>
+</li>
+<li itemprop='name' data-id="132" data-level="3">
+<a itemprop='url' class="" href="/shopy/index.php/features/shop-category/without-sidebar" data-target="#">Without Sidebar </a>
+</li>
+<li itemprop='name' data-id="140" data-level="3">
+<a itemprop='url' class="" href="/shopy/index.php/features/shop-category/2-column-product" data-target="#">2 column product </a>
+</li>
+<li itemprop='name' data-id="141" data-level="3">
+<a itemprop='url' class="" href="/shopy/index.php/features/shop-category/3-column-product" data-target="#">3 column product </a>
+</li>
+<li itemprop='name' data-id="142" data-level="3">
+<a itemprop='url' class="" href="/shopy/index.php/features/shop-category/4-column-product" data-target="#">4 column product </a>
+</li>
+</ul>
+</div></div>
+</div>
+</div></div>
+</li>
+</ul>
+</div></div>
+<div class="col-xs-6 mega-col-nav" data-width="6"><div class="mega-inner">
+<ul itemscope itemtype="http://www.schema.org/SiteNavigationElement" class="mega-nav level1">
+<li itemprop='name' class="mega mega-group" data-id="143" data-level="2" data-group="1">
+<span class=" dropdown-header mega-group-title separator" data-target="#"> Shop Product</span>
+<div class="nav-child mega-group-ct"><div class="mega-dropdown-inner">
+<div class="row">
+<div class="col-xs-12 mega-col-nav" data-width="12"><div class="mega-inner">
+<ul itemscope itemtype="http://www.schema.org/SiteNavigationElement" class="mega-nav level2">
+<li itemprop='name' data-id="144" data-level="3">
+<a itemprop='url' class="" href="/shopy/index.php/catalog/product-category/jewels/fashion-bangle" data-target="#">Single Product</a>
+</li>
+<li itemprop='name' data-id="145" data-level="3">
+<a itemprop='url' class="" href="/shopy/index.php/catalog/product-category/brooches/variable-product" data-target="#">variable Product</a>
+</li>
+<li itemprop='name' data-id="148" data-level="3">
+<a itemprop='url' class="" href="/shopy/index.php/catalog/product-category/necklace/configurable-product" data-target="#">Configurable Product</a>
+</li>
+<li itemprop='name' data-id="158" data-level="3">
+<a itemprop='url' class="" href="/shopy/index.php/catalog/product-category/hand-rings/downloadable-product" data-target="#">Downloadable Product</a>
+</li>
+</ul>
+</div></div>
+</div>
+</div></div>
+</li>
+</ul>
+</div></div>
+</div>
+<div class="row">
+<div class="col-xs-12 mega-col-module" data-width="12" data-position="133"><div class="mega-inner">
+<div class="t3-module module " id="Mod133"><div class="module-inner"><div class="module-ct">
+<div class="custom">
+<p><a href="#"><img src="/shopy/images/Themeparrot/Slider/menu-module.jpg" alt="menu module" /></a></p></div>
+</div></div></div>
+</div></div>
+</div>
+</div></div>
+</li>
+<li itemprop='name' class="dropdown mega" data-id="115" data-level="1">
+<a itemprop='url' class=" dropdown-toggle" href="#" data-target="#" data-toggle="dropdown">Blog<em class="caret"></em></a>
+<div class="nav-child dropdown-menu mega-dropdown-menu" style="width: 300px" data-width="300"><div class="mega-dropdown-inner">
+<div class="row">
+<div class="col-xs-12 mega-col-nav" data-width="12"><div class="mega-inner">
+<ul itemscope itemtype="http://www.schema.org/SiteNavigationElement" class="mega-nav level1">
+<li itemprop='name' data-id="133" data-level="2">
+<a itemprop='url' class="" href="/shopy/index.php/blog/single-blog" data-target="#">Single Blog </a>
+</li>
+<li itemprop='name' data-id="137" data-level="2">
+<a itemprop='url' class="" href="/shopy/index.php/blog/with-sidebar" data-target="#">With sidebar </a>
+</li>
+<li itemprop='name' data-id="136" data-level="2">
+<a itemprop='url' class="" href="/shopy/index.php/blog/single-column-layout" data-target="#">single column Layout </a>
+</li>
+<li itemprop='name' data-id="134" data-level="2">
+<a itemprop='url' class="" href="/shopy/index.php/blog/2-column-layout" data-target="#">2 column Layout </a>
+</li>
+<li itemprop='name' data-id="135" data-level="2">
+<a itemprop='url' class="" href="/shopy/index.php/blog/3-column-layout" data-target="#">3 column Layout </a>
+</li>
+</ul>
+</div></div>
+</div>
+</div></div>
+</li>
+<li itemprop='name' data-id="138" data-level="1">
+<a itemprop='url' class="" href="/shopy/index.php/contact-us" data-target="#">Contact Us </a>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</nav>
+
+
+<div class="wrap t3_slider">
+<div class="container">
+<div class="col-md-3 col-xs-12 col-sm-3">
+<div class="custom">
+<div class="row">
+<div class="col-md-12 col-sm-12 col-xs-6 right-img1 custom-img"><a href="#"><img src="/shopy/images/Themeparrot/Slider/right.jpg" alt="right" class="img-responsive image" /></a>
+<div class="overlay">
+<h3>ANKLETS <span>30% OFF</span> <small> - Limited Offer</small></h3>
+</div>
+</div>
+<div class="col-md-12 col-sm-12 col-xs-6 right-img2 custom-img"><a href="#"><img src="/shopy/images/Themeparrot/Slider/right3.jpg" alt="right3" class="img-responsive image" /></a>
+<div class="overlay">
+<h3>JEWELS <span>35% OFF</span> <small> - Limited Offer</small></h3>
+</div>
+</div>
+</div></div>
+</div>
+<div class="col-md-9 col-xs-12 col-sm-9">
+<div class="custom">
+<div id="myCarousel" class="carousel slide" data-ride="carousel"> 
+<div class="carousel-inner">
+<div class="item active"><img src="/shopy/images/Themeparrot/Slider/home_02.png" alt="home 02" /></div>
+<div class="item"><img src="/shopy/images/Themeparrot/Slider/home_01.png" alt="home 01" /></div>
+</div>
+ <a href="#myCarousel" class="left carousel-control" data-slide="prev"> <em class="fa fa-angle-left"></em> <span class="sr-only">Previous</span> </a> <a href="#myCarousel" class="right carousel-control" data-slide="next"> <em class="fa fa-angle-right"></em> <span class="sr-only">Next</span> </a></div></div>
+</div>
+
+</div>
+</div>
+
+
+<div class="wrap t3-mast-col ">
+<div class="container">
+<div itemscope itemtype="http://schema.org/ItemList" class="j2store-product-module j2store-product-module-list row-fluid">
+<div class="section-title" id="">
+<h2><span>Featured Products</span></h2>
+</div>
+
+<div class="j2store product-1 j2store-module-product col-md-3 ">
+
+<div class="j2store-product-image  col-md-12  ">
+<div class="mod_pic">
+<a href="http://demo.themeparrot.com/shopy/images/Themeparrot/product/Jwels/bangle1.jpg" class="modal" style="display:inline; position:relative;">
+<i class="fa fa-file-image-o"></i>
+</a>
+</div>
+<a href="/shopy/index.php/catalog/product-category/jewels/fashion-bangle" title="Fashion Bangle">
+<img itemprop="image" alt="Fashion Bangle" class="j2store-img-responsive j2store-product-image-1" src="http://demo.themeparrot.com/shopy/images/Themeparrot/product/Jwels/bangle1.jpg" width="200" height="200" />
+</a>
+</div>
+
+<div class="product-cart-section col-md-12 ">
+
+<div class="product-cart-left-block  col-md-12 ">
+
+<h4 itemprop="name" class="product-title">
+<a itemprop="url" href="/shopy/index.php/catalog/product-category/jewels/fashion-bangle" title="Fashion Bangle">
+Fashion Bangle </a>
+</h4>
+
+<div itemprop="offers" itemscope itemtype="http://schema.org/Offer" class="product-price-container">
+<span class="base-price strike">
+$100.00
+</span>
+<span class="sale-price">
+$85.00 </span>
+<meta itemprop="price" content="85.00000" />
+<meta itemprop="priceCurrency" content="USD" />
+<link itemprop="availability" href="https://schema.org/InStock" />
+</div>
+
+
+
+<div class="product_cart_block">
+<form action="/shopy/index.php/component/j2store/carts/addItem" method="post" class="j2store-addtocart-form" id="j2store-addtocart-form-1" name="j2store-addtocart-form-1" data-product_id="1" data-product_type="simple" enctype="multipart/form-data">
+
+<div class="cart-action-complete" style="display:none;">
+<p class="text-success">
+Item added to cart. <a href="/shopy/index.php/component/j2store/carts" class="j2store-checkout-link">
+Checkout </a>
+</p>
+</div>
+<div id="add-to-cart-1" class="j2store-add-to-cart">
+<div class="product-qty">
+<input type="number" name="product_qty" value="1" class="input-mini form-control" min="1" step='1' />
+</div>
+<input type="hidden" name="product_id" value="1" />
+<button title="Add to cart" data-cart-action-always="Adding..." data-cart-action-timeout="1000" type="submit" class="j2store-cart-button-cls "><i class="fa fa-cart-plus"></i></button>
+<div class="product-compare">
+<a title="Product compare" href="javascript:void(0);" class="j2store-compare-links product-compare-link" data-compare-action-done="" data-compare-link="/shopy/index.php/product-compare" data-compare-action-timeout="1000" data-compare-product-id="1" data-compare-variant-id="1" data-compare-id="10037" data-compare-show-messgage="" data-compare-show-messgage-text="Item added to campare list" data-icon-after-add="fa-retweet" onclick="addToCompare(this);">
+<i class="fa fa-list"></i>
+</a>
+</div>
+</div>
+<input type="hidden" name="option" value="com_j2store" />
+<input type="hidden" name="view" value="carts" />
+<input type="hidden" name="task" value="addItem" />
+<input type="hidden" name="ajax" value="0" />
+<input type="hidden" name="6da2e579785050939319f33f0bb73da2" value="1" /> <input type="hidden" name="return" value="aHR0cDovL2RlbW8udGhlbWVwYXJyb3QuY29tL3Nob3B5L2luZGV4LnBocA==" />
+<div class="j2store-notifications"></div>
+</form>
+
+<a title="Quick View" itemprop="url" style="display:inline;position:relative;" class="modal j2store-product-quickview-modal" ref="{handler:'iframe',size:{x: window.innerWidth-180, y: window.innerHeight-180}}" href="/shopy/index.php/catalog/product-category/jewels/fashion-bangle?tmpl=component">
+<i class="fa fa-external-link-square"></i>
+</a>
+</div>
+</div>
+
+</div> 
+
+
+</div>
+
+
+<div class="j2store product-2 j2store-module-product col-md-3 ">
+
+<div class="j2store-product-image  col-md-12  ">
+<div class="mod_pic">
+<a href="http://demo.themeparrot.com/shopy/images/Themeparrot/product/Jwels/bracelet2.jpg" class="modal" style="display:inline; position:relative;">
+<i class="fa fa-file-image-o"></i>
+</a>
+</div>
+<a href="/shopy/index.php/catalog/product-category/jewels/fashion-braclet" title="Fashion Braclet">
+<img itemprop="image" alt="Fashion Braclet" class="j2store-img-responsive j2store-product-image-2" src="http://demo.themeparrot.com/shopy/images/Themeparrot/product/Jwels/bracelet2.jpg" width="200" height="200" />
+</a>
+</div>
+
+<div class="product-cart-section col-md-12 ">
+
+<div class="product-cart-left-block  col-md-12 ">
+
+<h4 itemprop="name" class="product-title">
+<a itemprop="url" href="/shopy/index.php/catalog/product-category/jewels/fashion-braclet" title="Fashion Braclet">
+Fashion Braclet </a>
+</h4>
+
+<div itemprop="offers" itemscope itemtype="http://schema.org/Offer" class="product-price-container">
+<span class="base-price strike">
+$100.00
+</span>
+<span class="sale-price">
+$85.00 </span>
+<meta itemprop="price" content="85.00000" />
+<meta itemprop="priceCurrency" content="USD" />
+<link itemprop="availability" href="https://schema.org/InStock" />
+</div>
+
+
+
+<div class="product_cart_block">
+<form action="/shopy/index.php/component/j2store/carts/addItem" method="post" class="j2store-addtocart-form" id="j2store-addtocart-form-2" name="j2store-addtocart-form-2" data-product_id="2" data-product_type="simple" enctype="multipart/form-data">
+
+<div class="cart-action-complete" style="display:none;">
+<p class="text-success">
+Item added to cart. <a href="/shopy/index.php/component/j2store/carts" class="j2store-checkout-link">
+Checkout </a>
+</p>
+</div>
+<div id="add-to-cart-2" class="j2store-add-to-cart">
+<div class="product-qty">
+<input type="number" name="product_qty" value="1" class="input-mini form-control" min="1" step='1' />
+</div>
+<input type="hidden" name="product_id" value="2" />
+<button title="Add to cart" data-cart-action-always="Adding..." data-cart-action-timeout="1000" type="submit" class="j2store-cart-button-cls "><i class="fa fa-cart-plus"></i></button>
+<div class="product-compare">
+<a title="Product compare" href="javascript:void(0);" class="j2store-compare-links product-compare-link" data-compare-action-done="" data-compare-link="/shopy/index.php/product-compare" data-compare-action-timeout="1000" data-compare-product-id="2" data-compare-variant-id="2" data-compare-id="10037" data-compare-show-messgage="" data-compare-show-messgage-text="Item added to campare list" data-icon-after-add="fa-retweet" onclick="addToCompare(this);">
+<i class="fa fa-list"></i>
+</a>
+</div>
+</div>
+<input type="hidden" name="option" value="com_j2store" />
+<input type="hidden" name="view" value="carts" />
+<input type="hidden" name="task" value="addItem" />
+<input type="hidden" name="ajax" value="0" />
+<input type="hidden" name="6da2e579785050939319f33f0bb73da2" value="1" /> <input type="hidden" name="return" value="aHR0cDovL2RlbW8udGhlbWVwYXJyb3QuY29tL3Nob3B5L2luZGV4LnBocA==" />
+<div class="j2store-notifications"></div>
+</form>
+
+<a title="Quick View" itemprop="url" style="display:inline;position:relative;" class="modal j2store-product-quickview-modal" ref="{handler:'iframe',size:{x: window.innerWidth-180, y: window.innerHeight-180}}" href="/shopy/index.php/catalog/product-category/jewels/fashion-braclet?tmpl=component">
+<i class="fa fa-external-link-square"></i>
+</a>
+</div>
+</div>
+
+</div> 
+
+
+</div>
+
+
+<div class="j2store product-3 j2store-module-product col-md-3 ">
+
+<div class="j2store-product-image  col-md-12  ">
+<div class="mod_pic">
+<a href="http://demo.themeparrot.com/shopy/images/Themeparrot/product/Jwels/dollar.jpg" class="modal" style="display:inline; position:relative;">
+<i class="fa fa-file-image-o"></i>
+</a>
+</div>
+<a href="/shopy/index.php/catalog/product-category/jewels/fashion-dollar" title="Fashion Dollar">
+<img itemprop="image" alt="Fashion Dollar" class="j2store-img-responsive j2store-product-image-3" src="http://demo.themeparrot.com/shopy/images/Themeparrot/product/Jwels/dollar.jpg" width="200" height="200" />
+</a>
+</div>
+
+<div class="product-cart-section col-md-12 ">
+
+<div class="product-cart-left-block  col-md-12 ">
+
+<h4 itemprop="name" class="product-title">
+<a itemprop="url" href="/shopy/index.php/catalog/product-category/jewels/fashion-dollar" title="Fashion Dollar">
+Fashion Dollar </a>
+</h4>
+
+<div itemprop="offers" itemscope itemtype="http://schema.org/Offer" class="product-price-container">
+<span class="base-price strike">
+$100.00
+</span>
+<span class="sale-price">
+$85.00 </span>
+<meta itemprop="price" content="85" />
+<meta itemprop="priceCurrency" content="USD" />
+<link itemprop="availability" href="https://schema.org/InStock" />
+</div>
+
+
+
+<div class="product_cart_block">
+<form action="/shopy/index.php/component/j2store/carts/addItem" method="post" class="j2store-addtocart-form" id="j2store-addtocart-form-3" name="j2store-addtocart-form-3" data-product_id="3" data-product_type="simple" enctype="multipart/form-data">
+
+<div class="cart-action-complete" style="display:none;">
+<p class="text-success">
+Item added to cart. <a href="/shopy/index.php/component/j2store/carts" class="j2store-checkout-link">
+Checkout </a>
+</p>
+</div>
+<div id="add-to-cart-3" class="j2store-add-to-cart">
+<div class="product-qty">
+<input type="number" name="product_qty" value="1" class="input-mini form-control" min="1" step='1' />
+</div>
+<input type="hidden" name="product_id" value="3" />
+<button title="Add to cart" data-cart-action-always="Adding..." data-cart-action-timeout="1000" type="submit" class="j2store-cart-button-cls "><i class="fa fa-cart-plus"></i></button>
+<div class="product-compare">
+<a title="Product compare" href="javascript:void(0);" class="j2store-compare-links product-compare-link" data-compare-action-done="" data-compare-link="/shopy/index.php/product-compare" data-compare-action-timeout="1000" data-compare-product-id="3" data-compare-variant-id="3" data-compare-id="10037" data-compare-show-messgage="" data-compare-show-messgage-text="Item added to campare list" data-icon-after-add="fa-retweet" onclick="addToCompare(this);">
+<i class="fa fa-list"></i>
+</a>
+</div>
+</div>
+<input type="hidden" name="option" value="com_j2store" />
+<input type="hidden" name="view" value="carts" />
+<input type="hidden" name="task" value="addItem" />
+<input type="hidden" name="ajax" value="0" />
+<input type="hidden" name="6da2e579785050939319f33f0bb73da2" value="1" /> <input type="hidden" name="return" value="aHR0cDovL2RlbW8udGhlbWVwYXJyb3QuY29tL3Nob3B5L2luZGV4LnBocA==" />
+<div class="j2store-notifications"></div>
+</form>
+
+<a title="Quick View" itemprop="url" style="display:inline;position:relative;" class="modal j2store-product-quickview-modal" ref="{handler:'iframe',size:{x: window.innerWidth-180, y: window.innerHeight-180}}" href="/shopy/index.php/catalog/product-category/jewels/fashion-dollar?tmpl=component">
+<i class="fa fa-external-link-square"></i>
+</a>
+</div>
+</div>
+
+</div> 
+
+
+</div>
+
+
+<div class="j2store product-4 j2store-module-product col-md-3 ">
+
+<div class="j2store-product-image  col-md-12  ">
+<div class="mod_pic">
+<a href="http://demo.themeparrot.com/shopy/images/Themeparrot/product/Jwels/earring.jpg" class="modal" style="display:inline; position:relative;">
+<i class="fa fa-file-image-o"></i>
+</a>
+</div>
+<a href="/shopy/index.php/catalog/product-category/jewels/fashion-earring" title="Fashion Earring">
+<img itemprop="image" alt="Fashion Earring" class="j2store-img-responsive j2store-product-image-4" src="http://demo.themeparrot.com/shopy/images/Themeparrot/product/Jwels/earring.jpg" width="200" height="200" />
+</a>
+</div>
+
+<div class="product-cart-section col-md-12 ">
+
+<div class="product-cart-left-block  col-md-12 ">
+
+<h4 itemprop="name" class="product-title">
+<a itemprop="url" href="/shopy/index.php/catalog/product-category/jewels/fashion-earring" title="Fashion Earring">
+Fashion Earring </a>
+</h4>
+
+<div itemprop="offers" itemscope itemtype="http://schema.org/Offer" class="product-price-container">
+<span class="base-price strike">
+$100.00
+</span>
+<span class="sale-price">
+$85.00 </span>
+<meta itemprop="price" content="85.00000" />
+<meta itemprop="priceCurrency" content="USD" />
+<link itemprop="availability" href="https://schema.org/InStock" />
+</div>
+
+
+
+<div class="product_cart_block">
+<form action="/shopy/index.php/component/j2store/carts/addItem" method="post" class="j2store-addtocart-form" id="j2store-addtocart-form-4" name="j2store-addtocart-form-4" data-product_id="4" data-product_type="simple" enctype="multipart/form-data">
+
+<div class="cart-action-complete" style="display:none;">
+<p class="text-success">
+Item added to cart. <a href="/shopy/index.php/component/j2store/carts" class="j2store-checkout-link">
+Checkout </a>
+</p>
+</div>
+<div id="add-to-cart-4" class="j2store-add-to-cart">
+<div class="product-qty">
+<input type="number" name="product_qty" value="1" class="input-mini form-control" min="1" step='1' />
+</div>
+<input type="hidden" name="product_id" value="4" />
+<button title="Add to cart" data-cart-action-always="Adding..." data-cart-action-timeout="1000" type="submit" class="j2store-cart-button-cls "><i class="fa fa-cart-plus"></i></button>
+<div class="product-compare">
+<a title="Product compare" href="javascript:void(0);" class="j2store-compare-links product-compare-link" data-compare-action-done="" data-compare-link="/shopy/index.php/product-compare" data-compare-action-timeout="1000" data-compare-product-id="4" data-compare-variant-id="4" data-compare-id="10037" data-compare-show-messgage="" data-compare-show-messgage-text="Item added to campare list" data-icon-after-add="fa-retweet" onclick="addToCompare(this);">
+<i class="fa fa-list"></i>
+</a>
+</div>
+</div>
+<input type="hidden" name="option" value="com_j2store" />
+<input type="hidden" name="view" value="carts" />
+<input type="hidden" name="task" value="addItem" />
+<input type="hidden" name="ajax" value="0" />
+<input type="hidden" name="6da2e579785050939319f33f0bb73da2" value="1" /> <input type="hidden" name="return" value="aHR0cDovL2RlbW8udGhlbWVwYXJyb3QuY29tL3Nob3B5L2luZGV4LnBocA==" />
+<div class="j2store-notifications"></div>
+</form>
+
+<a title="Quick View" itemprop="url" style="display:inline;position:relative;" class="modal j2store-product-quickview-modal" ref="{handler:'iframe',size:{x: window.innerWidth-180, y: window.innerHeight-180}}" href="/shopy/index.php/catalog/product-category/jewels/fashion-earring?tmpl=component">
+<i class="fa fa-external-link-square"></i>
+</a>
+</div>
+</div>
+
+</div> 
+
+
+</div>
+
+
+<div class="j2store product-5 j2store-module-product col-md-3 ">
+
+<div class="j2store-product-image  col-md-12  ">
+<div class="mod_pic">
+<a href="http://demo.themeparrot.com/shopy/images/Themeparrot/product/Jwels/jwel2.jpg" class="modal" style="display:inline; position:relative;">
+<i class="fa fa-file-image-o"></i>
+</a>
+</div>
+<a href="/shopy/index.php/catalog/product-category/jewels/fashion-jewel1" title="Fashion Jewel1">
+<img itemprop="image" alt="Fashion Jewel1" class="j2store-img-responsive j2store-product-image-5" src="http://demo.themeparrot.com/shopy/images/Themeparrot/product/Jwels/jwel2.jpg" width="200" height="200" />
+</a>
+</div>
+
+<div class="product-cart-section col-md-12 ">
+
+<div class="product-cart-left-block  col-md-12 ">
+
+<h4 itemprop="name" class="product-title">
+<a itemprop="url" href="/shopy/index.php/catalog/product-category/jewels/fashion-jewel1" title="Fashion Jewel1">
+Fashion Jewel1 </a>
+</h4>
+
+<div itemprop="offers" itemscope itemtype="http://schema.org/Offer" class="product-price-container">
+<span class="base-price strike">
+$100.00
+</span>
+<span class="sale-price">
+$85.00 </span>
+<meta itemprop="price" content="85" />
+<meta itemprop="priceCurrency" content="USD" />
+<link itemprop="availability" href="https://schema.org/InStock" />
+</div>
+
+
+
+<div class="product_cart_block">
+<form action="/shopy/index.php/component/j2store/carts/addItem" method="post" class="j2store-addtocart-form" id="j2store-addtocart-form-5" name="j2store-addtocart-form-5" data-product_id="5" data-product_type="simple" enctype="multipart/form-data">
+
+<div class="cart-action-complete" style="display:none;">
+<p class="text-success">
+Item added to cart. <a href="/shopy/index.php/component/j2store/carts" class="j2store-checkout-link">
+Checkout </a>
+</p>
+</div>
+<div id="add-to-cart-5" class="j2store-add-to-cart">
+<div class="product-qty">
+<input type="number" name="product_qty" value="1" class="input-mini form-control" min="1" step='1' />
+</div>
+<input type="hidden" name="product_id" value="5" />
+<button title="Add to cart" data-cart-action-always="Adding..." data-cart-action-timeout="1000" type="submit" class="j2store-cart-button-cls "><i class="fa fa-cart-plus"></i></button>
+<div class="product-compare">
+<a title="Product compare" href="javascript:void(0);" class="j2store-compare-links product-compare-link" data-compare-action-done="" data-compare-link="/shopy/index.php/product-compare" data-compare-action-timeout="1000" data-compare-product-id="5" data-compare-variant-id="5" data-compare-id="10037" data-compare-show-messgage="" data-compare-show-messgage-text="Item added to campare list" data-icon-after-add="fa-retweet" onclick="addToCompare(this);">
+<i class="fa fa-list"></i>
+</a>
+</div>
+</div>
+<input type="hidden" name="option" value="com_j2store" />
+<input type="hidden" name="view" value="carts" />
+<input type="hidden" name="task" value="addItem" />
+<input type="hidden" name="ajax" value="0" />
+<input type="hidden" name="6da2e579785050939319f33f0bb73da2" value="1" /> <input type="hidden" name="return" value="aHR0cDovL2RlbW8udGhlbWVwYXJyb3QuY29tL3Nob3B5L2luZGV4LnBocA==" />
+<div class="j2store-notifications"></div>
+</form>
+
+<a title="Quick View" itemprop="url" style="display:inline;position:relative;" class="modal j2store-product-quickview-modal" ref="{handler:'iframe',size:{x: window.innerWidth-180, y: window.innerHeight-180}}" href="/shopy/index.php/catalog/product-category/jewels/fashion-jewel1?tmpl=component">
+<i class="fa fa-external-link-square"></i>
+</a>
+</div>
+</div>
+
+</div> 
+
+
+</div>
+
+
+<div class="j2store product-6 j2store-module-product col-md-3 ">
+
+<div class="j2store-product-image  col-md-12  ">
+<div class="mod_pic">
+<a href="http://demo.themeparrot.com/shopy/images/Themeparrot/product/Jwels/ring.jpg" class="modal" style="display:inline; position:relative;">
+<i class="fa fa-file-image-o"></i>
+</a>
+</div>
+<a href="/shopy/index.php/catalog/product-category/jewels/fashion-ring" title="Fashion ring">
+<img itemprop="image" alt="Fashion ring" class="j2store-img-responsive j2store-product-image-6" src="http://demo.themeparrot.com/shopy/images/Themeparrot/product/Jwels/ring.jpg" width="200" height="200" />
+</a>
+</div>
+
+<div class="product-cart-section col-md-12 ">
+
+<div class="product-cart-left-block  col-md-12 ">
+
+<h4 itemprop="name" class="product-title">
+<a itemprop="url" href="/shopy/index.php/catalog/product-category/jewels/fashion-ring" title="Fashion ring">
+Fashion ring </a>
+</h4>
+
+<div itemprop="offers" itemscope itemtype="http://schema.org/Offer" class="product-price-container">
+<span class="base-price strike">
+$100.00
+</span>
+<span class="sale-price">
+$85.00 </span>
+<meta itemprop="price" content="85.00000" />
+<meta itemprop="priceCurrency" content="USD" />
+<link itemprop="availability" href="https://schema.org/InStock" />
+</div>
+
+
+
+<div class="product_cart_block">
+<form action="/shopy/index.php/component/j2store/carts/addItem" method="post" class="j2store-addtocart-form" id="j2store-addtocart-form-6" name="j2store-addtocart-form-6" data-product_id="6" data-product_type="simple" enctype="multipart/form-data">
+
+<div class="cart-action-complete" style="display:none;">
+<p class="text-success">
+Item added to cart. <a href="/shopy/index.php/component/j2store/carts" class="j2store-checkout-link">
+Checkout </a>
+</p>
+</div>
+<div id="add-to-cart-6" class="j2store-add-to-cart">
+<div class="product-qty">
+<input type="number" name="product_qty" value="1" class="input-mini form-control" min="1" step='1' />
+</div>
+<input type="hidden" name="product_id" value="6" />
+<button title="Add to cart" data-cart-action-always="Adding..." data-cart-action-timeout="1000" type="submit" class="j2store-cart-button-cls "><i class="fa fa-cart-plus"></i></button>
+<div class="product-compare">
+<a title="Product compare" href="javascript:void(0);" class="j2store-compare-links product-compare-link" data-compare-action-done="" data-compare-link="/shopy/index.php/product-compare" data-compare-action-timeout="1000" data-compare-product-id="6" data-compare-variant-id="6" data-compare-id="10037" data-compare-show-messgage="" data-compare-show-messgage-text="Item added to campare list" data-icon-after-add="fa-retweet" onclick="addToCompare(this);">
+<i class="fa fa-list"></i>
+</a>
+</div>
+</div>
+<input type="hidden" name="option" value="com_j2store" />
+<input type="hidden" name="view" value="carts" />
+<input type="hidden" name="task" value="addItem" />
+<input type="hidden" name="ajax" value="0" />
+<input type="hidden" name="6da2e579785050939319f33f0bb73da2" value="1" /> <input type="hidden" name="return" value="aHR0cDovL2RlbW8udGhlbWVwYXJyb3QuY29tL3Nob3B5L2luZGV4LnBocA==" />
+<div class="j2store-notifications"></div>
+</form>
+
+<a title="Quick View" itemprop="url" style="display:inline;position:relative;" class="modal j2store-product-quickview-modal" ref="{handler:'iframe',size:{x: window.innerWidth-180, y: window.innerHeight-180}}" href="/shopy/index.php/catalog/product-category/jewels/fashion-ring?tmpl=component">
+<i class="fa fa-external-link-square"></i>
+</a>
+</div>
+</div>
+
+</div> 
+
+
+</div>
+
+
+<div class="j2store product-7 j2store-module-product col-md-3 ">
+
+<div class="j2store-product-image  col-md-12  ">
+<div class="mod_pic">
+<a href="http://demo.themeparrot.com/shopy/images/Themeparrot/product/Jwels/jwel.jpg" class="modal" style="display:inline; position:relative;">
+<i class="fa fa-file-image-o"></i>
+</a>
+</div>
+<a href="/shopy/index.php/catalog/product-category/jewels/modern-jewels" title="Modern Jewels">
+<img itemprop="image" alt="Modern Jewels" class="j2store-img-responsive j2store-product-image-7" src="http://demo.themeparrot.com/shopy/images/Themeparrot/product/Jwels/jwel.jpg" width="200" height="200" />
+</a>
+</div>
+
+<div class="product-cart-section col-md-12 ">
+
+<div class="product-cart-left-block  col-md-12 ">
+
+<h4 itemprop="name" class="product-title">
+<a itemprop="url" href="/shopy/index.php/catalog/product-category/jewels/modern-jewels" title="Modern Jewels">
+Modern Jewels </a>
+</h4>
+
+<div itemprop="offers" itemscope itemtype="http://schema.org/Offer" class="product-price-container">
+<span class="base-price strike">
+$100.00
+</span>
+<span class="sale-price">
+$85.00 </span>
+<meta itemprop="price" content="85" />
+<meta itemprop="priceCurrency" content="USD" />
+<link itemprop="availability" href="https://schema.org/InStock" />
+</div>
+
+
+
+<div class="product_cart_block">
+<form action="/shopy/index.php/component/j2store/carts/addItem" method="post" class="j2store-addtocart-form" id="j2store-addtocart-form-7" name="j2store-addtocart-form-7" data-product_id="7" data-product_type="simple" enctype="multipart/form-data">
+
+<div class="cart-action-complete" style="display:none;">
+<p class="text-success">
+Item added to cart. <a href="/shopy/index.php/component/j2store/carts" class="j2store-checkout-link">
+Checkout </a>
+</p>
+</div>
+<div id="add-to-cart-7" class="j2store-add-to-cart">
+<div class="product-qty">
+<input type="number" name="product_qty" value="1" class="input-mini form-control" min="1" step='1' />
+</div>
+<input type="hidden" name="product_id" value="7" />
+<button title="Add to cart" data-cart-action-always="Adding..." data-cart-action-timeout="1000" type="submit" class="j2store-cart-button-cls "><i class="fa fa-cart-plus"></i></button>
+<div class="product-compare">
+<a title="Product compare" href="javascript:void(0);" class="j2store-compare-links product-compare-link" data-compare-action-done="" data-compare-link="/shopy/index.php/product-compare" data-compare-action-timeout="1000" data-compare-product-id="7" data-compare-variant-id="7" data-compare-id="10037" data-compare-show-messgage="" data-compare-show-messgage-text="Item added to campare list" data-icon-after-add="fa-retweet" onclick="addToCompare(this);">
+<i class="fa fa-list"></i>
+</a>
+</div>
+</div>
+<input type="hidden" name="option" value="com_j2store" />
+<input type="hidden" name="view" value="carts" />
+<input type="hidden" name="task" value="addItem" />
+<input type="hidden" name="ajax" value="0" />
+<input type="hidden" name="6da2e579785050939319f33f0bb73da2" value="1" /> <input type="hidden" name="return" value="aHR0cDovL2RlbW8udGhlbWVwYXJyb3QuY29tL3Nob3B5L2luZGV4LnBocA==" />
+<div class="j2store-notifications"></div>
+</form>
+
+<a title="Quick View" itemprop="url" style="display:inline;position:relative;" class="modal j2store-product-quickview-modal" ref="{handler:'iframe',size:{x: window.innerWidth-180, y: window.innerHeight-180}}" href="/shopy/index.php/catalog/product-category/jewels/modern-jewels?tmpl=component">
+<i class="fa fa-external-link-square"></i>
+</a>
+</div>
+</div>
+
+</div> 
+
+
+</div>
+
+
+<div class="j2store product-8 j2store-module-product col-md-3 ">
+
+<div class="j2store-product-image  col-md-12  ">
+<div class="mod_pic">
+<a href="http://demo.themeparrot.com/shopy/images/Themeparrot/product/Jwels/jwel1.jpg" class="modal" style="display:inline; position:relative;">
+<i class="fa fa-file-image-o"></i>
+</a>
+</div>
+<a href="/shopy/index.php/catalog/product-category/jewels/fashion-jewel" title="Fashion Jewel">
+<img itemprop="image" alt="Fashion Jewel" class="j2store-img-responsive j2store-product-image-8" src="http://demo.themeparrot.com/shopy/images/Themeparrot/product/Jwels/jwel1.jpg" width="200" height="200" />
+</a>
+</div>
+
+<div class="product-cart-section col-md-12 ">
+
+<div class="product-cart-left-block  col-md-12 ">
+
+<h4 itemprop="name" class="product-title">
+<a itemprop="url" href="/shopy/index.php/catalog/product-category/jewels/fashion-jewel" title="Fashion Jewel">
+Fashion Jewel </a>
+</h4>
+
+<div itemprop="offers" itemscope itemtype="http://schema.org/Offer" class="product-price-container">
+<span class="base-price strike">
+$100.00
+</span>
+<span class="sale-price">
+$85.00 </span>
+<meta itemprop="price" content="85.00000" />
+<meta itemprop="priceCurrency" content="USD" />
+<link itemprop="availability" href="https://schema.org/InStock" />
+</div>
+
+
+
+<div class="product_cart_block">
+<form action="/shopy/index.php/component/j2store/carts/addItem" method="post" class="j2store-addtocart-form" id="j2store-addtocart-form-8" name="j2store-addtocart-form-8" data-product_id="8" data-product_type="simple" enctype="multipart/form-data">
+
+<div class="cart-action-complete" style="display:none;">
+<p class="text-success">
+Item added to cart. <a href="/shopy/index.php/component/j2store/carts" class="j2store-checkout-link">
+Checkout </a>
+</p>
+</div>
+<div id="add-to-cart-8" class="j2store-add-to-cart">
+<div class="product-qty">
+<input type="number" name="product_qty" value="1" class="input-mini form-control" min="1" step='1' />
+</div>
+<input type="hidden" name="product_id" value="8" />
+<button title="Add to cart" data-cart-action-always="Adding..." data-cart-action-timeout="1000" type="submit" class="j2store-cart-button-cls "><i class="fa fa-cart-plus"></i></button>
+<div class="product-compare">
+<a title="Product compare" href="javascript:void(0);" class="j2store-compare-links product-compare-link" data-compare-action-done="" data-compare-link="/shopy/index.php/product-compare" data-compare-action-timeout="1000" data-compare-product-id="8" data-compare-variant-id="8" data-compare-id="10037" data-compare-show-messgage="" data-compare-show-messgage-text="Item added to campare list" data-icon-after-add="fa-retweet" onclick="addToCompare(this);">
+<i class="fa fa-list"></i>
+</a>
+</div>
+</div>
+<input type="hidden" name="option" value="com_j2store" />
+<input type="hidden" name="view" value="carts" />
+<input type="hidden" name="task" value="addItem" />
+<input type="hidden" name="ajax" value="0" />
+<input type="hidden" name="6da2e579785050939319f33f0bb73da2" value="1" /> <input type="hidden" name="return" value="aHR0cDovL2RlbW8udGhlbWVwYXJyb3QuY29tL3Nob3B5L2luZGV4LnBocA==" />
+<div class="j2store-notifications"></div>
+</form>
+
+<a title="Quick View" itemprop="url" style="display:inline;position:relative;" class="modal j2store-product-quickview-modal" ref="{handler:'iframe',size:{x: window.innerWidth-180, y: window.innerHeight-180}}" href="/shopy/index.php/catalog/product-category/jewels/fashion-jewel?tmpl=component">
+<i class="fa fa-external-link-square"></i>
+</a>
+</div>
+</div>
+
+</div> 
+
+
+</div>
+
+</div>
+</div>
+</div>
+
+
+<nav class="wrap t3-navhelper ">
+<div class="container">
+<div class="custom">
+<div class="section-title">
+<h2><span>Our Brands</span></h2>
+</div>
+<div id="myCarousel" class="carousel-brand slide col-md-12 col-lg-12 col-sm-12 col-xs-12" data-ride="carousel"> 
+<div class="carousel-inner">
+<div class="item active">
+<div class="col-md-2 col-sm-2 col-xs-12 item-img"><img src="/shopy/images/Themeparrot/brand/brand1.png" alt="brand1" class="img-responsive" /></div>
+<div class="col-md-2 col-sm-2 col-xs-12 item-img"><img src="/shopy/images/Themeparrot/brand/brand2.png" alt="brand2" class="img-responsive" /></div>
+<div class="col-md-2 col-sm-2 col-xs-12 item-img"><img src="/shopy/images/Themeparrot/brand/brand3.png" alt="brand3" class="img-responsive" /></div>
+<div class="col-md-2 col-sm-2 col-xs-12 item-img"><img src="/shopy/images/Themeparrot/brand/brand4.png" alt="brand4" class="img-responsive" /></div>
+<div class="col-md-2 col-sm-2 col-xs-12 item-img"><img src="/shopy/images/Themeparrot/brand/brand5.png" alt="brand5" class="img-responsive" /></div>
+<div class="col-md-2 col-sm-2 col-xs-12 item-img"><img src="/shopy/images/Themeparrot/brand/brand6.png" alt="brand6" class="img-responsive" /></div>
+</div>
+<div class="item">
+<div class="col-md-2 col-sm-2 col-xs-12 item-img"><img src="/shopy/images/Themeparrot/brand/brand1.png" alt="brand1" class="img-responsive" /></div>
+<div class="col-md-2 col-sm-2 col-xs-12 item-img"><img src="/shopy/images/Themeparrot/brand/brand2.png" alt="brand2" class="img-responsive" /></div>
+<div class="col-md-2 col-sm-2 col-xs-12 item-img"><img src="/shopy/images/Themeparrot/brand/brand3.png" alt="brand3" class="img-responsive" /></div>
+<div class="col-md-2 col-sm-2 col-xs-12 item-img"><img src="/shopy/images/Themeparrot/brand/brand4.png" alt="brand4" class="img-responsive" /></div>
+<div class="col-md-2 col-sm-2 col-xs-12 item-img"><img src="/shopy/images/Themeparrot/brand/brand5.png" alt="brand5" class="img-responsive" /></div>
+<div class="col-md-2 col-sm-2 col-xs-12 item-img"><img src="/shopy/images/Themeparrot/brand/brand6.png" alt="brand6" class="img-responsive" /></div>
+</div>
+</div>
+<a href="#myCarousel" class="left carousel-control" data-slide="prev"> <span class="glyphicon glyphicon-chevron-left"></span> <span class="sr-only">Previous</span> </a> <a href="#myCarousel" class="right carousel-control" data-slide="next"> <span class="glyphicon glyphicon-chevron-right"></span> <span class="sr-only">Next</span> </a></div></div>
+</div>
+</nav>
+
+
+<div class="container t3-sl t3-sl-1">
+
+<div class="t3-spotlight t3-spotlight-1  row">
+<div class=" col-lg-4 col-md-4 col-sm-4 col-xs-12">
+<div class="t3-module module " id="Mod114"><div class="module-inner"><div class="module-ct">
+<div class="custom">
+<div class="col-md-12 col-sm-12 col-xs-12 category"><img src="/shopy/images/Themeparrot/product/furniture.jpg" alt="furniture" class="img-responsive" />
+<div class="cate-overlay"><a href="#">Jewels</a></div>
+</div></div>
+</div></div></div>
+</div>
+<div class=" col-lg-4 col-md-4 col-sm-4 col-xs-12">
+<div class="t3-module module " id="Mod115"><div class="module-inner"><div class="module-ct">
+<div class="custom">
+<div class="col-md-12 col-sm-12 col-xs-12 category"><img src="/shopy/images/Themeparrot/product/furniture1.jpg" alt="furniture1" class="img-responsive" />
+<div class="cate-overlay"><a href="#">Necklace</a></div>
+</div></div>
+</div></div></div>
+</div>
+<div class=" col-lg-4 col-md-4 col-sm-4 col-xs-12">
+<div class="t3-module module " id="Mod116"><div class="module-inner"><div class="module-ct">
+<div class="custom">
+<div class="col-md-12 col-sm-12 col-xs-12 category"><img src="/shopy/images/Themeparrot/product/furniture2.jpg" alt="furniture2" class="img-responsive" />
+<div class="cate-overlay"><a href="#">Hand Rings</a></div>
+</div></div>
+</div></div></div>
+</div>
+</div>
+
+</div>
+
+
+<div class="wrap t3-shipping_wrap">
+<div class="col-md-12 col-xs-12 col-sm-12 ship-position">
+<div class="custom">
+<div class="container">
+<div class="shipping col-sm-12"><span><em class="fa fa-truck"></em> FREE SHIPPING </span> Offered by Shopy - lorem ipsum dolor sit amet mauris tellus <a href="#" class="button">More</a></div>
+</div></div>
+</div>
+</div>
+
+
+<footer id="t3-footer" class="wrap t3-footer">
+
+<div class="container">
+
+<div class="t3-spotlight t3-footnav  row">
+<div class=" col-lg-3 col-md-3 col-sm-3 col-xs-6">
+<div class="t3-module module " id="Mod119"><div class="module-inner"><h3 class="module-title "><span>Shopy</span></h3><div class="module-ct">
+<div class="custom">
+<div class="About">Lorem Ipsum has been the industry's, when an unknown printer took a galley of type and scrambled. It has survived not only five centuries <a href="#">Read More</a></div></div>
+</div></div></div>
+</div>
+<div class=" col-lg-3 col-md-3 col-sm-3 col-xs-6">
+<div class="t3-module module " id="Mod122"><div class="module-inner"><h3 class="module-title "><span>Location</span></h3><div class="module-ct">
+<div class="custom">
+<div class="footer-content">
+<div class="foot-icon"><em class="fa fa-map-marker" style="margin-right: 5px;"></em> Shopy address city street no 17, 1800</div>
+<div class="foot-icon"><em class="fa fa-envelope" style="margin-right: 5px;"></em> <a href="/cdn-cgi/l/email-protection#73160b121e031f1633171c1e121a1d5d101c1e4c200611191610074e3b161f1f1c" target="_top"><span class="__cf_email__" data-cfemail="4622232b290622292b272f286825292b">[email&#160;protected]</span> </a></div>
+<div class="foot-icon"><em class="fa fa-globe" style="margin-right: 5px;"></em><a href="#" target="_top"> shopy.com</a></div>
+<div class="foot-icon"><em class="fa fa-phone" style="margin-right: 5px;"></em> +38649 123 456 789 00</div>
+</div></div>
+</div></div></div>
+</div>
+<div class=" col-lg-3 col-md-3 col-sm-3 col-xs-6">
+<div class="t3-module module " id="Mod121"><div class="module-inner"><h3 class="module-title "><span>Page Links</span></h3><div class="module-ct">
+<div class="custom">
+<p><a href="#">About Us</a></p>
+<p><a href="#">My Personal Info</a></p>
+<p><a href="/shopy/index.php/pages/my-account">My Account</a></p>
+<p><a href="#">Advaced search</a></p>
+<p><a href="/shopy/index.php/log-out">Log Out</a></p></div>
+</div></div></div>
+</div>
+<div class=" col-lg-3 col-md-3 col-sm-3 col-xs-6">
+<div class="t3-module module " id="Mod120"><div class="module-inner"><h3 class="module-title "><span>Popular Products</span></h3><div class="module-ct">
+<div class="custom">
+<p><a href="/shopy/index.php/catalog/product-category/jewels/fashion-bangle">Bangle</a></p>
+<p><a href="/shopy/index.php/catalog/product-category/bracelets/fashion-bracelet1">Bracelet</a></p>
+<p><a href="/shopy/index.php/catalog/product-category/hand-rings/modern-ring">Hand Ring</a></p>
+<p><a href="/shopy/index.php/catalog/product-category/necklace/fashion-necklace">NeckLace</a></p></div>
+</div></div></div>
+</div>
+</div>
+
+</div>
+
+<section class="t3-copyright">
+<div class="container">
+<div class="row">
+<div class="col-md-8 col-sm-6 copyright ">
+<div class="module">
+<small>Copyright &#169; 2021 Shopy. All Rights Reserved. Designed by <a href="http://www.themeparrot.com/" title="Visit themeparrot.com!">Themeparrot.com</a>.</small>
+<small><a href="https://www.joomla.org">Joomla!</a> is Free Software released under the <a href="https://www.gnu.org/licenses/gpl-2.0.html">GNU General Public License.</a></small>
+</div>
+</div>
+<div class="col-md-4 col-sm-6 social ">
+<div class="custom">
+<p>
+<a href="#"> <em class="fa fa-rss"></em> </a>
+<a href="#"> <em class="fa fa-twitter"></em> </a>
+<a href="#"> <em class="fa fa-facebook"></em> </a> <a href="#"><em class="fa fa-google-plus"></em> </a>
+<a href="#"> <em class="fa fa-pinterest-p"></em> </a>
+</p></div>
+</div>
+</div>
+</div>
+</section>
+</footer>
+
+
+<div id="back-to-top" data-spy="affix" data-offset-top="300" class="back-to-top hidden-xs hidden-sm affix-top">
+<button class="btn btn-primary" title="Back to Top"><i class="fa fa-angle-up"></i></button>
+</div>
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script type="text/javascript">
+	 
+		(function($) {
+		 
+		// Back to top
+		 
+		$('#back-to-top').on('click', function(){
+		 
+		$("html, body").animate({scrollTop: 0}, 500);
+		 
+		return false;
+		 
+		});
+		 
+		})(jQuery);
+		 
+	</script>
+
+</div>
+</body>
+</html>
