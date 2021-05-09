@@ -15,7 +15,7 @@
     width: 100%; /* Full width */
     padding: 10px; /* Some padding */
 }
-.info .content {
+.info .tab {
     position: absolute; /* Position the background text */
     bottom: 0; /* At the bottom. Use top:0 to append it to the top */
     background: rgb(0, 0, 0); /* Fallback color */
