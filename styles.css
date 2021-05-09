@@ -15,12 +15,66 @@
     width: 100%; /* Full width */
     padding: 10px; /* Some padding */
 }
-.info .tab {
-    position: absolute; /* Position the background text */
+.info .content {
     bottom: 0; /* At the bottom. Use top:0 to append it to the top */
     background: rgb(0, 0, 0); /* Fallback color */
     background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
     color: #f1f1f1; /* Grey text */
     width: 92.5%; /* Full width */
     padding: 20px; /* Some padding */
+    height:60%;
 }
+ /* Style the tab */
+ .tab {
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+    }
+    /* Style the buttons that are used to open the tab content */
+    .tab button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+    }
+    /* Change background color of buttons on hover */
+    .tab button:hover {
+    background-color: #ddd;
+    }
+    .cancel:hover {
+        background-color: rgba(250, 26, 26, 0.836);
+        }
+
+    /* Create an active/current tablink class */
+    .tab button.active {
+    background-color: #ccc;
+    }
+
+    /* Style the tab content */
+    .tabcontent {
+        background-color:rgba(173, 138, 22, 0.842);
+    display:none;
+    width:95.5%;
+    position:absolute;
+    bottom:-56px;
+    }
+.dev_info:hover
+    {
+        background-color: #0000008a;
+    }
+    button:hover{
+        background-color: #9575cd;
+
+    }
+    .login:hover{
+        background-color: #40e083;
+
+    }
+    .container[_ngcontent-msf-c3] {
+        width: 32vw;
+        margin-left: 3vw;
+        padding-left: .01vw;}
+
