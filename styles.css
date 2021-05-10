@@ -15,7 +15,7 @@
     width: 100%; /* Full width */
     padding: 10px; /* Some padding */
 }
-.info .content {
+.info .content{
     bottom: 0; /* At the bottom. Use top:0 to append it to the top */
     background: rgb(0, 0, 0); /* Fallback color */
     background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
@@ -118,12 +118,12 @@
             border: none;
             outline: 0;
             display: inline-block;
-            padding: 8px;
+            padding: 1px;
             color: white;
             background-color: #000;
             text-align: center;
             cursor: pointer;
-            width: 100%;
+            width: 40%;
           }
           
           .button:hover {
@@ -146,29 +146,28 @@
           .btn:hover {
             background-color: RoyalBlue;
           }
-#bgfaq img
-  {
-  width:100% ;height:auto;
-  }   
-  .col-sm-6
-  {
-  opacity: 0.6;
-  margin: 10px;
-  border: 1px solid black;
-  background-color: #ffffff;
-  filter: alpha(opacity=60);
-  box-sizing: content-box;
-width: 100%;
-padding: 5px;
-  }
-  .faqa
-  {
-    position: absolute;
-        z-index: 999;
-        margin: 0 auto;
-        left: 0;
-        right: 0;
-        top: 0%; /* Adjust this value to move the positioned div up and down */
-        width: 90%;
-  }
-
+          #bgfaq img
+          {
+          width:100% ;height:auto;
+          }   
+          .col-sm-6
+          {
+          opacity: 0.6;
+          margin: 10px;
+          border: 1px solid black;
+          background-color: #ffffff;
+          filter: alpha(opacity=60);
+          box-sizing: content-box;
+        width: 100%;
+        padding: 5px;
+          }
+          .faqa
+          {
+            position: absolute;
+                z-index: 999;
+                margin: 0 auto;
+                left: 0;
+                right: 0;
+                top: 0%; /* Adjust this value to move the positioned div up and down */
+                width: 90%;
+          }
