@@ -15,11 +15,7 @@ function openCity(evt, cityName) {
     document.getElementById(cityName).style.display = "block";
     evt.currentTarget.className += " active";
     }
-    function openState()
-    {
-        tabcontent=document.getElementsByClassName("tabcontent");
-    }
-    document.getElementById("defaultOpen").click();
+    document.getElementById("defaultOpen").click(); 
     function contact()
     {
         alert("Feel free to call or message anytime:\nDarshini:+919840336198\nDikshita:+918130263296\nShubhangi: +917479577601\nSreelakshmi: +971566428580");
