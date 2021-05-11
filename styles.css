@@ -171,4 +171,18 @@ padding: 5px;
         top: 0%; /* Adjust this value to move the positioned div up and down */
         width: 90%;
   }
+.circlepic
+{
+  border-radius: 100px;
+}
+
+table {
+  table-layout: fixed ;
+  width: 100% ;
+}
+td {
+  width: 25% ;
+}
+
+
 
