@@ -171,3 +171,35 @@
                 top: 0%; /* Adjust this value to move the positioned div up and down */
                 width: 90%;
           }
+          .w3-button {
+            border: none;
+            outline: 0;
+            display: inline-block;
+            padding: 1px;
+            font-size: 20px;
+            font-family: 'Times New Roman', Times, serif;
+            color: white;
+            background-color:rgb(76, 172, 135);
+            text-align: center;
+            cursor: pointer;
+            width: 20%;
+            height:80%;
+            padding-block: 10px;
+          }
+          .tablinks{
+            border:mediumpurple;
+            outline: 0;
+            display: inline-block;
+            padding: 1px;
+            font-size: 21px;
+            font-weight: 700;
+            font-family: 'Times New Roman', Times, serif;
+            font-style:inherit;
+            color:rgb(26, 5, 51);
+            background-color:rgb(119, 187, 233);
+            text-align: center;
+            cursor: pointer;
+            width: 10%;
+            height:10%;
+            padding-block: 10px;
+          }
