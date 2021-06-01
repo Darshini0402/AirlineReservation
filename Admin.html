@@ -1,0 +1,25 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Login</title>
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <style>
+
+        </style>
+        <link rel="stylesheet" href="{% static 'loginstyle.css' %}">
+        <script src="{% static 'firstpagejs.js' %}">
+        </script>
+    </head>
+    <body>
+        <h1 style="font-weight: bold; font-family: 'Times New Roman', Times, serif; color: ivory; font-size: 50px; text-align: center;">VARIANCE AIRLINES</h1>
+        <div style="position: absolute; top: 30px; left: 20px; width: 100px;">
+            <a href="Login.html"><i class="material-icons" style="font-size: 40px; color: azure;">home</i></a>
+        </div>
+        <div class="bg-text">
+            <h4 style="color: white; font-family: 'Times New Roman', Times, serif; font-weight: bold; text-align: center;">Username: <input type="text" placeholder="Username"></h4>
+            <h4 style="color: white; font-family: 'Times New Roman', Times, serif; font-weight: bold; text-align: center;">Password: <input type="password" placeholder="Password"></h4>
+            <input type="submit" placeholder="Login">
+        </div>
+    </body>
+</html>
