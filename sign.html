@@ -1,0 +1,51 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <title>Sign up</title>
+        <style>
+            button:hover{
+                background-color: cadetblue;
+            }
+            @media(min-width:800px)
+            {
+                body{
+                    background-color:palevioletred;
+                }
+            }
+        </style>
+        <link rel="stylesheet" href="{%static 'styles.css' %}">
+        <script src="{%static 'firstpagejs.js' %}">
+        </script>
+    </head>
+    <body>
+        <div id="bg-image">
+            <img src="https://thecurrent.pk/wp-content/uploads/2021/03/flights.jpg" style="width: 100%;"> </div>
+            <div class="info" style="bottom: 250px;">
+                <h1 style="font-size: 75px;font-family: 'Times New Roman', Times, serif;color: black; text-align: center;">VARIANCE AIRLINES</h1>
+                <h1 style="text-align: center;font-family: 'Times New Roman', Times, serif;">Create your account</h1>
+                <form style="text-align: center" method="GET">
+                    <p>
+                        <b>Username</b>      <input type="text" placeholder="Username" name="user_name">
+                    </p>
+                    <p>
+                        <b>Email Address</b> <input type="email" placeholder="Email address" name="email_id">
+                    </p>
+                    <p>
+                        <b>Password</b>      <input type="password" placeholder="Password" name="pass_word">
+                    </p>
+                    <button class="w3-button ">Create Account</button>
+                </form>
+            </div>
+                <table style="position: absolute; text-align: center;bottom: -150px;width: 100%;">
+                    <th class="dev_info" onclick="contact()" style="color: whitesmoke;"><u>Contact Us</u></th>
+                    <th class="dev_info" style="color: whitesmoke;"><a href="faq.html" style="color: whitesmoke;">FAQ</a></th>
+                    <th class="dev_info" style="color: whitesmoke;">About Us</th>
+                </table>
+            
+        
+    </body>
+</html>
