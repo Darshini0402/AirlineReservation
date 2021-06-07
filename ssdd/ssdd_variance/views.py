@@ -13,3 +13,9 @@ def faq(request):
     return render(request,'faq.html')
 def aboutus(request):
     return render(request,'aboutus.html')
+def Admin(request):
+    return render(request,'Admin.html')
+def Login(request):
+    return render(request,'Login.html')
+def User(request):
+    return render(request,'User.html')
