@@ -1,3 +1,4 @@
+from .models import flights
 from django.http.response import HttpResponse
 from django.shortcuts import render
 from django.http import HttpResponse
@@ -19,3 +20,7 @@ def Login(request):
     return render(request,'Login.html')
 def User(request):
     return render(request,'User.html')
+def search(request):
+    return render(request,'searchflight.html',{
+        "flights" : flights.objects.all()
+    })
