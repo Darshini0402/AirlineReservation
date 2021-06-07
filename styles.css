@@ -22,7 +22,7 @@
     color: #f1f1f1; /* Grey text */
     width: 92.5%; /* Full width */
     padding: 20px; /* Some padding */
-    height:60%;
+    height:67.25%;
 }
  /* Style the tab */
  .tab {
@@ -58,6 +58,7 @@
         background-color:rgba(173, 138, 22, 0.842);
     display:none;
     width:95.5%;
+    height:300px;
     position:absolute;
     bottom:-56px;
     }
@@ -245,6 +246,51 @@ td {
             height:10%;
             padding-block: 10px;
           }
+          .hi{
+            border:rgba(101, 101, 202, 0.835);
+            outline: 0;
+            display: inline-block;
+            padding: 1px;
+            font-size: 15px;
+            font-weight: 700;
+            font-family: 'Times New Roman', Times, serif;
+            font-style:inherit;
+            color:rgb(26, 5, 51);
+            background-color:rgb(103, 238, 98);
+            text-align: center;
+            cursor: pointer;
+            width: 25%;
+            border-radius:15px;
+            box-shadow:0 4px rgb(99, 179, 179);
+            height:10%;
+          }
+          .hi:active{
+            transform: translateY(4px);
+            box-shadow:0 5px cyan;
+          }
+          .hi:hover{
+            background-color: #e1f682;
+          }
+         .het{ border:mediumpurple;
+            outline: 0;
+            display: inline-block;
+            padding: 1px;
+            font-size: 21px;
+            font-weight: 700;
+            font-family: 'Times New Roman', Times, serif;
+            font-style:inherit;
+            color:rgb(26, 5, 51);
+            background-color:rgb(255, 185, 73);
+            text-align: center;
+            cursor: pointer;
+            width: 30%;
+            height:15%;
+            padding-block: 10px;
+            border-radius: 9px;
+         }
+         .het:hover{
+           background-color:rgba(245, 200, 148, 0.89);
+         }
           .pad{
             padding:100px;
           }
