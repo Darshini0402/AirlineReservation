@@ -16,6 +16,8 @@ def main():
             "forget to activate a virtual environment?"
         ) from exc
     execute_from_command_line(sys.argv)
+    
+ALLOWED_HOSTS = ['192.168.1.50', '127.0.0.1', 'localhost']    
 
 
 if __name__ == '__main__':
