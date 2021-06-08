@@ -2,6 +2,7 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+        <meta charset="UTF-8">
         <title>Sign up</title>
         <link rel="stylesheet" href="{% static 'loginstyle.css' %}">
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -16,19 +17,20 @@
         </style>
     </head>
     <body>
-        <h1 style="font-weight: bold; font-family: 'Times New Roman', Times, serif; color: ivory; font-size: 50px; text-align: center;">VARIANCE AIRLINES</h1>
+        <h4 style="font-weight: bold; font-family: 'Times New Roman', Times, serif; color: ivory; font-size: 50px; text-align: center;">VARIANCE AIRLINES</h4>
         <div style="position: absolute; top: 30px; left: 20px; width: 100px;">
             <a href="Login.html"><i class="material-icons" style="font-size: 40px; color: azure;">home</i></a>
         </div>
         <div class="bg-text" style="align-items: center;">
             <form method="POST">
-                <h4>Name: <input type="text" placeholder="Name" name="Firstname" value= '{% if submitbutton == "Submit" %} {{ name }} {% endif %}'/></h4>
-                <h4>Mobile number: <input type="Mobile" placeholder="Mobile"></h4>
-                <h4>Email: <input type="email" placeholder="Email"></h4>
-                <h4>Username: <input type="text" placeholder="Username"></h4>
-                <h4>Password: <input type="password" placeholder="Password"></h4>
-                <h4>Re-enter Password: <input type="password" placeholder="Password"></h4>
-                <a href="Login.html"><input type="submit" placeholder="Login"></a>
+                {% csrf_token %}
+                <h4>Name: <input type="text" placeholder="Name" name="Name" value= '{% if submitbutton == "Submit" %} {{ name }} {% endif %}'/></h4>
+                <h4>Mobile number: <input type="Mobile" placeholder="Mobile" name="Mobile" value= '{% if submitbutton == "Submit" %} {{ mobile }} {% endif %}'/></h4>
+                <h4>Email: <input type="email" placeholder="Email" name="Email" value= '{% if submitbutton == "Submit" %} {{ email }} {% endif %}'/></h4>
+                <h4>Username: <input type="text" placeholder="Username" name="Username" value= '{% if submitbutton == "Submit" %} {{ username }} {% endif %}'/></h4>
+                <h4>Password: <input type="password" placeholder="Password" name="Password" value= '{% if submitbutton == "Submit" %} {{ password }} {% endif %}'/></h4>
+                <h4>Re-enter Password: <input type="password" placeholder="Re-Password" name="Repassword" value= '{% if submitbutton == "Submit" %} {{ repassword }} {% endif %}'/></h4>
+                <input type="submit" value="Create account">
             </form>
         </div>
     </body>
