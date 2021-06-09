@@ -1,12 +1,11 @@
-{% load static %}
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Search Flight</title>
-    </head>
-    <body>
-        {​​​​% for flight in flights %}​​​​
-            <li> Flight {​​​​{​​​​flight.flightno}​​​​}​​​​: From {​​​​{​​​​flight.origin}​​​​}​​​​ To {​​​​{​​​​flight.destination}​​​​}​​​​ </li>
-        {​​​​% endfor %}​​​​
-    </body>
+<head>
+<title>Search Flight</title>
+</head>
+<body>
+{% for flight in flights %}
+<li> Flight {{flight.flightno}}: From {{flight.origin}} To {{flight.destination}} </li>
+{% endfor %}
+</body>
 </html>

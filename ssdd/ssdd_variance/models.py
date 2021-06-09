@@ -19,6 +19,15 @@ class flights(models.Model):
     def __str__(self):
         return f" {self.flightno}"
 
+
+class Departs(models.Model):
+    sno=models.IntegerField(primary_key=True)
+    flight_no=models.ForeignKey(flights,on_delete=models.CASCADE, related_name='flight_code')
+    dep=models.ForeignKey(airports,on_delete=models.CASCADE, related_name='origin_code')
+    arr=models.ForeignKey(airports,on_delete=models.CASCADE, related_name='destination_code')
+    departure_time=models.CharField(max_length=64)
+    arrival_time=models.CharField(max_length=64)
+    
 class user_login(models.Model):
     name=models.CharField(max_length=64)
     mobile=models.IntegerField()
@@ -28,3 +37,7 @@ class user_login(models.Model):
     
     def __str__(self):
         return f" {self.user.username}"
+  
+    
+    
+          

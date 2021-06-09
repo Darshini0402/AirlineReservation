@@ -5,3 +5,4 @@ from .import models
 admin.site.register(models.airports)
 admin.site.register(models.flights)
 admin.site.register(models.user_login)
+admin.site.register(models.Departs)
