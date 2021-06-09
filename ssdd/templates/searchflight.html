@@ -1,11 +1,26 @@
+{% load static %}
 <!DOCTYPE html>
 <html>
-<head>
-<title>Search Flight</title>
-</head>
-<body>
-{% for flight in flights %}
-<li> Flight {{flight.flightno}}: From {{flight.origin}} To {{flight.destination}} </li>
-{% endfor %}
-</body>
+    <head>
+        <title>Search Flight</title>
+        <link rel="stylesheet" href="{% static 'loginstyle.css' %}">
+        <style>
+            li{
+                color: white; 
+                font-family: 'Times New Roman', Times, serif; 
+                font-weight: bold; 
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="bg-text">
+        {% for flight in departs %}
+            
+        <li> Flight {{flight.flight_no_id}}: From {{flight.arr_id}} ({{flight.departure_time}}) To {{flight.dep_id}} ({{flight.arrival_time}}) </li>
+            
+        {% endfor %}
+        </div>
+    </body>
+
 </html>

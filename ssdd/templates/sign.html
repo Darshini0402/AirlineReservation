@@ -22,15 +22,14 @@
             <a href="Login.html"><i class="material-icons" style="font-size: 40px; color: azure;">home</i></a>
         </div>
         <div class="bg-text" style="align-items: center;">
-            <form method="POST">
+            <form action="{% url 'User' %}" method="POST">
                 {% csrf_token %}
-                <h4>Name: <input type="text" placeholder="Name" name="Name" value= '{% if submitbutton == "Submit" %} {{ name }} {% endif %}'/></h4>
-                <h4>Mobile number: <input type="Mobile" placeholder="Mobile" name="Mobile" value= '{% if submitbutton == "Submit" %} {{ mobile }} {% endif %}'/></h4>
-                <h4>Email: <input type="email" placeholder="Email" name="Email" value= '{% if submitbutton == "Submit" %} {{ email }} {% endif %}'/></h4>
-                <h4>Username: <input type="text" placeholder="Username" name="Username" value= '{% if submitbutton == "Submit" %} {{ username }} {% endif %}'/></h4>
-                <h4>Password: <input type="password" placeholder="Password" name="Password" value= '{% if submitbutton == "Submit" %} {{ password }} {% endif %}'/></h4>
-                <h4>Re-enter Password: <input type="password" placeholder="Re-Password" name="Repassword" value= '{% if submitbutton == "Submit" %} {{ repassword }} {% endif %}'/></h4>
-                <input type="submit" value="Create account">
+                <h4>Name: <input type="text" placeholder="Name" name="Name"></h4>
+                <h4>Mobile number: <input type="Mobile" placeholder="Mobile" name="Mobile"></h4>
+                <h4>Email: <input type="email" placeholder="Email" name="Email"></h4>
+                <h4>Username: <input type="text" placeholder="Username" name="Username"></h4>
+                <h4>Password: <input type="password" placeholder="Password" name="Password"></h4>
+                <input type="submit" value="Login">
             </form>
         </div>
     </body>
