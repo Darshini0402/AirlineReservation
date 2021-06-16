@@ -5,20 +5,39 @@
         <title>Search Flight</title>
         <link rel="stylesheet" href="{% static 'loginstyle.css' %}">
         <style>
-            li{
-                color: white; 
-                font-family: 'Times New Roman', Times, serif; 
-                font-weight: bold; 
-                text-align: center;
+            .wrapper {
+                display: grid;
+                grid-template-columns: 100px 100px 100px;
+                grid-gap: 10px;
+                background-color: #fff;
+                color: #444;
             }
         </style>
     </head>
     <body>
-        <div id="bg-text">
+        <div class='wrapper'> 
+        
         {% for flight in departs %}
-            
-        <li> Flight {{flight.flight_no_id}}: From {{flight.arr_id}} ({{flight.departure_time}}) To {{flight.dep_id}} ({{flight.arrival_time}}) </li>
-            
+            {% if flight.dep_id == from and flight.arr_id == to %}
+                <div class='bg-text' style="position: relative; bottom: 0%;">
+                    {{ flight.flight_no}} From : {{ flight.dep_id }}   To : {{ flight.arr_id }}<br></br>
+                        Departure Time : {{ flight.departure_time }} Arrival Time : {{ flight.arrival_time }}<br></br>
+                        {% for f in fl%}
+                            {% if f.origin_id == from and f.destination_id == to %}
+                                Economy : {{ f.economy }}<br></br>
+                            {% endif %}
+                        {% endfor %}
+                </div>
+                <div class='bg-text' style="position: relative; bottom: 25%;">
+                    {{ flight.flight_no}} From : {{ flight.dep_id }}   To : {{ flight.arr_id }}<br></br>
+                        Departure Time : {{ flight.departure_time }} Arrival Time : {{ flight.arrival_time }}<br></br>
+                        {% for f in fl%}
+                            {% if f.origin_id == from and f.destination_id == to %}
+                                Business : {{ f.business }}<br></br>
+                            {% endif %}
+                        {% endfor %}
+                </div>
+            {% endif %}   
         {% endfor %}
         </div>
     </body>

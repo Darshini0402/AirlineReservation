@@ -59,14 +59,14 @@
                     <button style="font-size:15px;" class="tablinks" onclick="openCity(event, 'Edit Booking')">Edit Booking</button>
                 </div>
                 <div id="Book Flight" class="tabcontent" style="text-align:center;width: 40%; right:210px;left:390px;bottom:-70px;">
-                    <form action="{% url 'list' %}" method="GET">
+                    <form method="POST" action="searchflight.html">
                         {% csrf_token %}   
                         <h1 style="font-weight:200px;font-size:larger;"><u>From</u></h1>
                         <div>
                            <input name="fromcities" list="Cities" placeholder="From">
                             <datalist id="Cities">
-                                {% for c in cities%}
-                                <option value={{c.city}}--{{c.code}}></option>	
+                                {% for c in cities %}
+                                <option value={{c.code}}>{{c.city}}--{{c.code}}</option>	
                                 {% endfor %}
                             </datalist>
                         </div>
@@ -75,14 +75,16 @@
                         <input name="tocities" list="Cities" placeholder="To">
                             <datalist id="Cities">
                                 {% for c in cities %}
-                                    <option value={{c.city}}--{{c.code}}></option>	
+                                    {% if c.code != from %}
+                                        <option value={{c.code}}>{{c.city}}--{{c.code}}</option>
+                                    {% endif %}	
                                 {% endfor %}
                             </datalist>  
                         <h1 style="font-weight:200px;font-size:larger;"><u>Departure Date</u></h1>
                         <input id = "ExpiryDate" type='date' name="deptdate" /><br> 
                         <h1 style="font-weight:200px;font-size:larger;"><u>Passenger</u></h1> 
                         <input type="number" min="1" placeholder="Number of Passenger" name="count">  
-                        <button input type="submit"><a href='searchflight.html'>Search Flight</a></button>
+                        <button input type="submit">Search Flight</button>
                     </div>
                 </form>
                 <html>              

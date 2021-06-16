@@ -7,22 +7,23 @@ from django.contrib.auth import authenticate, login, logout
 
 # Create your views here.
 def firstpage(request):
-    departure=request.GET["fromcities"]
-    arrival=request.GET["tocities"]
-    date=request.GET["deptdate"]
-    passenger=request.GET["count"]
+    if request.method == 'POST':
+        fcity = request.POST.get('fromcities')
     return render(request,'firstpage.html',{
-        "cities": airports.objects.all(), "deptplace":departure, "arrplace":arrival
+        "cities": airports.objects.all(), "from":fcity
     })
 
-def search(request):
+def searchflight(request):
+    if request.method == 'POST':
+        fcity = request.POST.get('fromcities')
+        tcity = request.POST.get('tocities')
     return render(request,'searchflight.html',{
-        "departs": Departs.objects.all()
+        "departs": Departs.objects.all(),"from":fcity,"to":tcity, "fl":flights.objects.all()
     })
 
 def list(request):
     return render(request,'firstpage.html',{
-        "cities": airports.objects.all()
+        "cities": airports.objects.all(), 
     })
 
 def index(request):
