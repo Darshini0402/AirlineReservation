@@ -30,7 +30,7 @@ def index(request):
     # If no user is signed in, return to login page:
     if not request.user.is_authenticated:
         return HttpResponseRedirect(reverse("login"))
-    return render(request,"firstpage.html")
+    #return render(request,"firstpage.html")
 def login_view(request):
     if request.method == "POST":
         # Accessing username and password from form data

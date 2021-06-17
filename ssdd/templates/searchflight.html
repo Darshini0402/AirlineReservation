@@ -6,6 +6,7 @@
         <link rel="stylesheet" href="{% static 'loginstyle.css' %}">
     </head>   
     <body>    
+        <h1 style="font-weight: bold; font-family: 'Times New Roman', Times, serif; color: ivory; font-size: 50px; text-align: center;">VARIANCE AIRLINES</h1>
         {% for flight in departs %}
             {% if flight.dep_id == from and flight.arr_id == to %}
                 <div class='bg-text' style="position: relative; top: 70px;">
