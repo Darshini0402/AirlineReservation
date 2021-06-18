@@ -29,15 +29,12 @@ class Departs(models.Model):
     arrival_time=models.CharField(max_length=64)
     
 class user_login(models.Model):
-    name=models.CharField(max_length=64)
-    mobile=models.IntegerField()
-    email_id=models.CharField(max_length=64)
-    username=models.CharField(max_length=20, primary_key=True)
-    password=models.CharField(max_length=16)
+    username=models.OneToOneField(User,on_delete=models.CASCADE, related_name="uname")
+    first_name=models.OneToOneField(User,on_delete=models.CASCADE, related_name="fname")
+    last_name=models.OneToOneField(User,on_delete=models.CASCADE, related_name="lname")
+    email=models.OneToOneField(User,on_delete=models.CASCADE, related_name="mail")
+    password=models.OneToOneField(User,on_delete=models.CASCADE, related_name="passw")
     
     def __str__(self):
         return f" {self.user.username}"
-  
-    
-    
           

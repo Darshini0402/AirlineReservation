@@ -1,9 +1,12 @@
-from .models import airports, flights, user_login, Departs
+from .models import airports, flights, Departs, user_login
 from django.http.response import HttpResponse, HttpResponseRedirect
 from django.shortcuts import render
 from django.http import HttpResponse
 from django.urls import reverse
 from django.contrib.auth import authenticate, login, logout
+from django.db.models.query import RawQuerySet
+from django.db import connection
+from datetime import date
 
 # Create your views here.
 def firstpage(request):
@@ -52,26 +55,19 @@ def logout_view(request):
     return render(request, "login.html", {
                 "message": "Logged Out"
             })
-    
-
 
 def sign(request):
-    if request.method == 'POST':
-        if request.POST.get('Password') == request.POST.get('Repassword'):
-            #if request.POST.get('Username') not in list(user_login.objects.select('username')):
-                u=user_login()
-                u.name= request.POST.get('Name')
-                u.mobile= request.POST.get('Mobile')
-                u.email_id= request.POST.get('Email')
-                u.username= request.POST.get('Username')
-                u.password= request.POST.get('Password')
-                u.save()
-                return render(request, 'Login.html')  
-        else:
-            print("invalid")
-    else:
-        return render(request,'sign.html')
-    return render(request,'sign.html')
+    if request.method == "POST":
+        username=request.POST.get('uname')
+        fname=request.POST.get('fname')
+        lname=request.POST.get('lname')
+        email=request.POST.get('mail')
+        passw=request.POST.get('passw')
+        cursor = connection.cursor()
+        cursor.execute('INSERT INTO auth_user (username, first_name, last_name, email, password, is_superuser, is_staff, is_active, date_joined) VALUES (%s,%s,%s,%s,%s,0,0,1,18-06-2021)',[username,fname,lname,email,passw])
+        connection.commit()
+        connection.close()
+    return render(request,'sign.html')   
 
 def bagsnmeals(request):
     return render(request,'bagsnmeals.html')

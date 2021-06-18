@@ -22,14 +22,14 @@
             <a href="Login.html"><i class="material-icons" style="font-size: 40px; color: azure;">home</i></a>
         </div>
         <div class="bg-text" style="align-items: center;">
-            <form action="{% url 'User' %}" method="POST">
+            <form action="" method="POST">
                 {% csrf_token %}
-                <h4>Name: <input type="text" placeholder="Name" name="Name"></h4>
-                <h4>Mobile number: <input type="Mobile" placeholder="Mobile" name="Mobile"></h4>
-                <h4>Email: <input type="email" placeholder="Email" name="Email"></h4>
-                <h4>Username: <input type="text" placeholder="Username" name="Username"></h4>
-                <h4>Password: <input type="password" placeholder="Password" name="Password"></h4>
-                <input type="submit" value="Login">
+                <h4>Username: <input type="text" placeholder="Username" name="uname"></h4>
+                <h4>First name: <input type="text" placeholder="First name" name="fname"></h4>
+                <h4>Last name: <input type="text" placeholder="Last name" name="lname"></h4>
+                <h4>Email: <input type="email" placeholder="Email" name="mail"></h4>
+                <h4>Password: <input type="password" placeholder="Password" name="passw"></h4>
+                <input type="submit" value="Sign up">
             </form>
         </div>
     </body>
