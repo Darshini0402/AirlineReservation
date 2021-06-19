@@ -29,6 +29,37 @@
                 </div>
             {% endif %}   
         {% endfor %}
-        <button type="submit">Proceed to fill Passenger details</button>
+
+<button class="open-button" onclick="openForm()">Proceed to fill Passenger details</button>
+
+<div class="form-popup" id="myForm">
+  <form action="/action_page.php" class="form-container">
+    <h2>ADD PASSENGER DETAILS</h2>
+
+    <label for="firstname"><b>First Name (& Middle name if any)</b></label>
+    <input type="text" placeholder="Enter First Name" name="email" required>
+    
+    <label for="psw"><b>Last Name</b></label>
+    <input type="text" placeholder="Enter Last Name" name="psw" required>
+
+    <label for="firstname"><b>Adhaar Number</b></label>
+    <input type="text" placeholder="Enter Adhaar Number" name="email" required>
+
+    <label for="firstname"><b>Phone Number</b></label>
+    <input type="text" placeholder="Enter Phone Number" name="email" required>
+
+    <a href="searchflight.html"><button type="submit" class="btn">Submit</button>
+    <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+  </form>
+</div>
+<script>
+function openForm() {
+  document.getElementById("myForm").style.display = "block";
+}
+
+function closeForm() {
+  document.getElementById("myForm").style.display = "none";
+}
+</script>
     </body>
 </html>
