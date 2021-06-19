@@ -22,3 +22,11 @@ function openCity(evt, cityName) {
     }
     var today = new Date().toISOString().split('T')[0];
     document.getElementsByName("somedate")[0].setAttribute('min', today);
+    
+    function openForm() {
+        document.getElementById("myForm").style.display = "block";
+      }
+      
+    function closeForm() {
+        document.getElementById("myForm").style.display = "none";
+      }
