@@ -57,16 +57,6 @@ def logout_view(request):
             })
 
 def sign(request):
-    if request.method == "POST":
-        username=request.POST.get('uname')
-        fname=request.POST.get('fname')
-        lname=request.POST.get('lname')
-        email=request.POST.get('mail')
-        passw=request.POST.get('passw')
-        cursor = connection.cursor()
-        cursor.execute('INSERT INTO auth_user (username, first_name, last_name, email, password, is_superuser, is_staff, is_active, date_joined) VALUES (%s,%s,%s,%s,%s,0,0,1,18-06-2021)',[username,fname,lname,email,passw])
-        connection.commit()
-        connection.close()
     return render(request,'sign.html')   
 
 def bagsnmeals(request):
