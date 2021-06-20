@@ -5,8 +5,10 @@
         <title>Search Flight</title>
         <link rel="stylesheet" href="{% static 'loginstyle.css' %}">
     </head>   
-    <body>    
+    <body> 
         <h1 style="font-weight: bold; font-family: 'Times New Roman', Times, serif; color: ivory; font-size: 50px; text-align: center;">VARIANCE AIRLINES</h1>
+        <form action='transaction.html' method='POST'>   
+        {% csrf_token %}
         {% for flight in departs %}
             {% if flight.dep_id == from and flight.arr_id == to %}
                 <div class='bg-text' style="position: relative; top: 70px;">
@@ -14,7 +16,8 @@
                         Departure Time : {{ flight.departure_time }} Arrival Time : {{ flight.arrival_time }}<br></br>
                         {% for f in fl%}
                             {% if f.origin_id == from and f.destination_id == to %}
-                                <input type="radio" name="class"> Economy : Rs.{{ f.economy }}<br></br>
+                                <input type="radio" name="choice" value="{{ f.economy }}" id="choice_{{ flight.flight_no }}"> Economy : Rs.{{ f.economy }}<br></br>
+                                <label for="choice_{{ flight.flight_no }}">{{ choice.economy }}</label>
                             {% endif %}
                         {% endfor %}
                 </div>
@@ -23,12 +26,14 @@
                         Departure Time : {{ flight.departure_time }} Arrival Time : {{ flight.arrival_time }}<br></br>
                         {% for f in fl%}
                             {% if f.origin_id == from and f.destination_id == to %}
-                                <input type="radio" name="class">  Business : Rs.{{ f.business }}<br></br>
+                                <input type="radio" name="choice" value="{{ f.business }}" id="choice_{{ flight.flight_no }}">  Business : Rs.{{ f.business }}<br></br>
+                                <label for="choice_{{ flight.flight_no }}">{{ choice.Business }}</label>
                             {% endif %}
                         {% endfor %}
                 </div>
             {% endif %}   
         {% endfor %}
-        <button type="submit">Proceed to fill Passenger details</button>
+        <button type="submit">Proceed to fill Passenger details</button> {{ count }}
+        </form>
     </body>
 </html>

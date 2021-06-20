@@ -1,3 +1,7 @@
+from django.db.models.fields import CommaSeparatedIntegerField
+from django.http import request
+from django.http.request import validate_host
+from django.utils.regex_helper import Choice
 from .models import airports, flights, Departs, user_login
 from django.http.response import HttpResponse, HttpResponseRedirect
 from django.shortcuts import render
@@ -20,8 +24,18 @@ def searchflight(request):
     if request.method == 'POST':
         fcity = request.POST.get('fromcities')
         tcity = request.POST.get('tocities')
+        global n
+        n = request.POST.get('count')
     return render(request,'searchflight.html',{
-        "departs": Departs.objects.all(),"from":fcity,"to":tcity, "fl":flights.objects.all()
+        "departs": Departs.objects.all(),"from":fcity,"to":tcity, "fl":flights.objects.all(),
+    })
+
+def transaction(request):
+    if request.method=='POST':
+        global cost
+        cost = request.POST.get('choice')
+    return render(request,'transaction.html',{ "count":n , "amt":cost
+         
     })
 
 def list(request):
