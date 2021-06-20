@@ -26,6 +26,8 @@
     </div>
             <div class="info" style="bottom: 500px;">
             <h1 style="font-size: 75px;top: 100px; font-family: 'Times New Roman', Times, serif;color: black; text-align: center;">VARIANCE AIRLINES</h1></div>
+            <form action="transaction.html" method="POST">
+            {% csrf_token %}
             <div style="top: 0px;">
             <div class="row" style="padding-top: 130px;">
                 <div class="column">
@@ -37,8 +39,8 @@
                       <p >Description</p>
                       <p class="title">Fried Rice, Spring Roll, &amp; Chili Paneer & Manchurian Gravy, Chowmein, Kimchi Salad,Garlic Sauce</p>
                       <div style="text-align: left;">
-                        <input type="number" min="0" value="0">
-                       <button class="button" name="add" style="font-size:15px;">Add</button>
+                        <input type="number" min="0" value="0" name="chinese">
+                       {% comment %} <button class="button" name="add" style="font-size:15px;">Add</button> {% endcomment %}
                       </div>
                       <div id="Add1" style="text-align: right;right: 50px;">
                        <h1 style="font-weight:200px;font-size:larger;text-align: left;"></h1>
@@ -57,8 +59,8 @@
                       <p>Description</p>
                       <p  class="title">Steamed rice cakes with lentil soup</p>
                       <div style="text-align: left;">
-                        <input type="number" min="0" value="0">
-                       <button class="button" name="add" style="font-size:15px;">Add</button>
+                        <input type="number" min="0" value="0" name="idli">
+                       {% comment %} <button class="button" name="add" style="font-size:15px;">Add</button> {% endcomment %}
                       </div>
                       <div id="Add1" style="text-align: right;right: 50px;">
                        <h1 style="font-weight:200px;font-size:larger;text-align: left;"></h1>
@@ -77,8 +79,8 @@
                       <p class="title">Description</p>
                       <p>Orange Coconut mocktail</p>
                       <div style="text-align: left;">
-                        <input type="number" min="0" value="0">
-                       <button class="button" name="add" style="font-size:15px;">Add</button>
+                        <input type="number" min="0" value="0" name="mocktail">
+                       {% comment %} <button class="button" name="add" style="font-size:15px;">Add</button> {% endcomment %}
                       </div>
                       <div id="Add1" style="text-align: right;right: 50px;">
                        <h1 style="font-weight:200px;font-size:larger;text-align: left;"></h1>
@@ -98,8 +100,8 @@
                       <p >Description</p>
                       <p class="title">Paratha/Rice,Curd,Dal,Kofta Balls,Malai Kofta,Lemon Juice,Chutney,Salad,Vinegar Onion,Dhokla</p>
                       <div style="text-align: left;">
-                        <input type="number" min="0" value="0">
-                       <button class="button" name="add" style="font-size:15px;">Add</button>
+                        <input type="number" min="0" value="0" name="thaali">
+                       {% comment %} <button class="button" name="add" style="font-size:15px;">Add</button> {% endcomment %}
                       </div>
                       <div id="Add1" style="text-align: right;right: 50px;">
                        <h1 style="font-weight:200px;font-size:larger;text-align: left;"></h1>
@@ -117,8 +119,8 @@
                       <p>Description</p>
                       <p class="title">Italian stuffed bread,corn salad,coffee</p>
                       <div style="text-align: center;">
-                        <input type="number" min="0" value="0">
-                       <button class="button" name="add" style="font-size:15px;">Add</button>
+                        <input type="number" min="0" value="0" name="italian">
+                       {% comment %} <button class="button" name="add" style="font-size:15px;">Add</button> {% endcomment %}
                       </div>
                       <div id="Add1" style="text-align: right;right: 50px;">
                        <h1 style="font-weight:200px;font-size:larger;text-align: left;"></h1>
@@ -136,8 +138,8 @@
                       <p class="title">Farm house</p>
                       <p  class="title">Toppings: Crisp capsicum, succulent mushrooms, fresh tomatoes</p>
                       <div style="text-align: left;">
-                        <input type="number" min="0" value="0">
-                       <button class="button" name="add" style="font-size:15px;">Add</button>
+                        <input type="number" min="0" value="0" name="pizza">
+                       {% comment %} <button class="button" name="add" style="font-size:15px;">Add</button> {% endcomment %}
                       </div>
                       <div id="Add1" style="text-align: right;right: 50px;">
                        <h1 style="font-weight:200px;font-size:larger;text-align: left;"></h1>
@@ -146,6 +148,8 @@
                   </div>
                 </div>
               </div>
+              <button type="submit">Pay Now</button>
+              </form>
             </div>
                  <table style="position: absolute; text-align: center;width: 100%;padding-left: 50px;color: black;">
                     <th class="dev" onclick="contact()" style="color:black;"><u>Contact Us</u></th>

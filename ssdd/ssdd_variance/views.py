@@ -31,10 +31,17 @@ def searchflight(request):
     })
 
 def transaction(request):
+    
     if request.method=='POST':
-        global cost
-        cost = request.POST.get('choice')
-    return render(request,'transaction.html',{ "count":n , "amt":cost
+        i=request.POST.get('idli')
+        c=request.POST.get('chinese')
+        it=request.POST.get('italian')
+        t=request.POST.get('thaali')
+        m=request.POST.get('mocktail')
+        p=request.POST.get('pizza')
+    total=(int(cost))*(int(n))
+    tma=int(i)*400+int(c)*300+int(m)*120+int(t)*420+int(it)*500+int(p)*800
+    return render(request,'transaction.html',{ "amt":total,"meal_price":tma,
          
     })
 
@@ -74,6 +81,9 @@ def sign(request):
     return render(request,'sign.html')   
 
 def bagsnmeals(request):
+    if request.method=='POST':
+        global cost
+        cost = request.POST.get('choice')
     return render(request,'bagsnmeals.html')
 def faq(request):
     return render(request,'faq.html')

@@ -78,7 +78,7 @@
 </style>
     </head>   
     <body> 
-        <form action='transaction.html' method='POST'>   
+        <form action='bagsnmeals.html' method='POST'>   
         {% csrf_token %}
         {% for flight in departs %}
             {% if flight.dep_id == from and flight.arr_id == to %}
@@ -104,7 +104,8 @@
                 </div>
             {% endif %}   
         {% endfor %}
-        <button type="submit">Pay Now</button>
+        <h3>Do you wish to add meals?<h3>
+            <button type="submit" class="btn">Add meals</button>
         </form>
 
         <button class="open-button" onclick="openForm()">Proceed to fill Passenger details</button>
@@ -125,8 +126,7 @@
             <label for="firstname"><b>Phone Number</b></label>
             <input type="text" placeholder="Enter Phone Number" name="email" required>
 
-            <h3>Do you wish to add meals?<h3>
-            <a href="bagsnmeals.html"<button type="submit" class="btn">Add meals</button></a>
+            
             <h3>To add another passenger click on continue<h3>
             <button type="submit" class="btn">Continue</button>
             <button type="button" class="btn cancel" onclick="closeForm()">Cancel</button>
