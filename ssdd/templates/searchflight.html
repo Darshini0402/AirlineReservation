@@ -105,7 +105,8 @@
 <button class="open-button" onclick="openForm()">Proceed to fill Passenger details</button>
 
 <div class="form-popup" id="myForm">
-  <form action="/action_page.php" class="form-container">
+  <form class="form-container" method="POST">
+    {% csrf_token %}
     <h2>ADD PASSENGER DETAILS</h2>
 
     <label for="firstname"><b>First Name (& Middle name if any)</b></label>
@@ -120,8 +121,12 @@
     <label for="firstname"><b>Phone Number</b></label>
     <input type="text" placeholder="Enter Phone Number" name="email" required>
 
-    <a href="searchflight.html"><button type="submit" class="btn">Submit</button>
-    <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+     <h3>Do you wish to add meals?<h3>
+    <a href="bagsnmeals.html"<button type="submit" class="btn">Add meals</button></a>
+    <h3>To add another passenger click on continue<h3>
+    <button type="submit" class="btn">Continue</button>
+    <button type="submit" class="btn">Pay here</button>
+    <button type="button" class="btn cancel" onclick="closeForm()">Cancel</button>
   </form>
 </div>
 <script>
