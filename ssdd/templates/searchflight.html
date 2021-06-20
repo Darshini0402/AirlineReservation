@@ -110,9 +110,10 @@
 
         <button class="open-button" onclick="openForm()">Proceed to fill Passenger details</button>
 
-        <div class="form-popup" id="myForm">
-        <form action="" class="form-container">
-            <h2>ADD PASSENGER DETAILS</h2>
+<div class="form-popup" id="myForm">
+  <form class="form-container" method="POST">
+    {% csrf_token %}
+    <h2>ADD PASSENGER DETAILS</h2>
 
             <label for="firstname"><b>First Name (& Middle name if any)</b></label>
             <input type="text" placeholder="Enter First Name" name="email" required>
