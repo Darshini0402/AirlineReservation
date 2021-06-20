@@ -37,14 +37,12 @@ class user_login(models.Model):
     
     def __str__(self):
         return f" {self.user.username}"
-class Passenger(models.Model):
+class passenger(models.Model):
     adhaar_no=models.CharField(max_length=20, primary_key=True)
     first = models.CharField(max_length=64)
     last = models.CharField(max_length=64)
     phone_no=models.CharField(max_length=64)
-    dob=models.CharField(max_length=64)
-    flights= models.ManyToManyField(flights, blank=True, related_name="passengers")
-
+    
 
     def __str__(self):
         return f"{self.first} {self.last}"          
