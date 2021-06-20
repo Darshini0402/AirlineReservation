@@ -77,8 +77,9 @@
 }
 </style>
     </head>   
-    <body>    
-      
+    <body> 
+        <form action='transaction.html' method='POST'>   
+        {% csrf_token %}
         {% for flight in departs %}
             {% if flight.dep_id == from and flight.arr_id == to %}
                 <div class='bg-text' style="position: relative; top: 70px;">
@@ -86,7 +87,8 @@
                         Departure Time : {{ flight.departure_time }} Arrival Time : {{ flight.arrival_time }}<br></br>
                         {% for f in fl%}
                             {% if f.origin_id == from and f.destination_id == to %}
-                                <input type="radio" name="class"> Economy : Rs.{{ f.economy }}<br></br>
+                                <input type="radio" name="choice" value="{{ f.economy }}" id="choice_{{ flight.flight_no }}"> Economy : Rs.{{ f.economy }}<br></br>
+                                <label for="choice_{{ flight.flight_no }}">{{ choice.economy }}</label>
                             {% endif %}
                         {% endfor %}
                 </div>
@@ -95,43 +97,50 @@
                         Departure Time : {{ flight.departure_time }} Arrival Time : {{ flight.arrival_time }}<br></br>
                         {% for f in fl%}
                             {% if f.origin_id == from and f.destination_id == to %}
-                                <input type="radio" name="class">  Business : Rs.{{ f.business }}<br></br>
+                                <input type="radio" name="choice" value="{{ f.business }}" id="choice_{{ flight.flight_no }}">  Business : Rs.{{ f.business }}<br></br>
+                                <label for="choice_{{ flight.flight_no }}">{{ choice.Business }}</label>
                             {% endif %}
                         {% endfor %}
                 </div>
             {% endif %}   
         {% endfor %}
+        <button type="submit">Pay Now</button>
+        </form>
 
-<button class="open-button" onclick="openForm()">Proceed to fill Passenger details</button>
+        <button class="open-button" onclick="openForm()">Proceed to fill Passenger details</button>
 
-<div class="form-popup" id="myForm">
-  <form action="/action_page.php" class="form-container">
-    <h2>ADD PASSENGER DETAILS</h2>
+        <div class="form-popup" id="myForm">
+        <form action="" class="form-container">
+            <h2>ADD PASSENGER DETAILS</h2>
 
-    <label for="firstname"><b>First Name (& Middle name if any)</b></label>
-    <input type="text" placeholder="Enter First Name" name="email" required>
-    
-    <label for="psw"><b>Last Name</b></label>
-    <input type="text" placeholder="Enter Last Name" name="psw" required>
+            <label for="firstname"><b>First Name (& Middle name if any)</b></label>
+            <input type="text" placeholder="Enter First Name" name="email" required>
+            
+            <label for="psw"><b>Last Name</b></label>
+            <input type="text" placeholder="Enter Last Name" name="psw" required>
 
-    <label for="firstname"><b>Adhaar Number</b></label>
-    <input type="text" placeholder="Enter Adhaar Number" name="email" required>
+            <label for="firstname"><b>Adhaar Number</b></label>
+            <input type="text" placeholder="Enter Adhaar Number" name="email" required>
 
-    <label for="firstname"><b>Phone Number</b></label>
-    <input type="text" placeholder="Enter Phone Number" name="email" required>
+            <label for="firstname"><b>Phone Number</b></label>
+            <input type="text" placeholder="Enter Phone Number" name="email" required>
 
-    <a href="searchflight.html"><button type="submit" class="btn">Submit</button>
-    <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
-  </form>
-</div>
-<script>
-function openForm() {
-  document.getElementById("myForm").style.display = "block";
-}
+            <h3>Do you wish to add meals?<h3>
+            <a href="bagsnmeals.html"<button type="submit" class="btn">Add meals</button></a>
+            <h3>To add another passenger click on continue<h3>
+            <button type="submit" class="btn">Continue</button>
+            <button type="button" class="btn cancel" onclick="closeForm()">Cancel</button>
 
-function closeForm() {
-  document.getElementById("myForm").style.display = "none";
-}
-</script>
+        </form>
+        </div>
+        <script>
+        function openForm() {
+        document.getElementById("myForm").style.display = "block";
+        }
+
+        function closeForm() {
+        document.getElementById("myForm").style.display = "none";
+        }
+        </script>
     </body>
 </html>
