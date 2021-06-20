@@ -39,11 +39,11 @@ class user_login(models.Model):
         return f" {self.user.username}"
     
     class Passenger(models.Model):
-    adhaar_no=models.CharField(max_length=20, primary_key=True)
-    first = models.CharField(max_length=64)
-    last = models.CharField(max_length=64)
-    phone_no=models.CharField(max_length=64)
-    dob=models.CharField(max_length=64)
+        adhaar_no=models.CharField(max_length=20, primary_key=True)
+        first = models.CharField(max_length=64)
+        last = models.CharField(max_length=64)
+        phone_no=models.CharField(max_length=64)
+        dob=models.CharField(max_length=64)
     
 
 
