@@ -27,6 +27,13 @@ class Departs(models.Model):
     arr=models.ForeignKey(airports,on_delete=models.CASCADE, related_name='destination_code')
     departure_time=models.CharField(max_length=64)
     arrival_time=models.CharField(max_length=64)
+
+class passenger(models.Model):
+    adhaar_no=models.CharField(max_length=20, primary_key=True)
+    first = models.CharField(max_length=64)
+    last = models.CharField(max_length=64)
+    phone_no=models.CharField(max_length=64)
+        
     
 class user_login(models.Model):
     username=models.OneToOneField(User,on_delete=models.CASCADE, related_name="uname")
@@ -37,12 +44,3 @@ class user_login(models.Model):
     
     def __str__(self):
         return f" {self.user.username}"
-class passenger(models.Model):
-    adhaar_no=models.CharField(max_length=20, primary_key=True)
-    first = models.CharField(max_length=64)
-    last = models.CharField(max_length=64)
-    phone_no=models.CharField(max_length=64)
-    
-
-    def __str__(self):
-        return f"{self.first} {self.last}"          
