@@ -4,7 +4,7 @@
     <head>
         <title>Search Flight</title>
         <link rel="stylesheet" href="{% static 'loginstyle.css' %}">
-        <style>
+        {% comment %} <style>
         body {font-family: Arial, Helvetica, sans-serif;}
 * {box-sizing: border-box;}
 
@@ -75,10 +75,10 @@
 .form-container .btn:hover, .open-button:hover {
   opacity: 1;
 }
-</style>
+</style> {% endcomment %}
     </head>   
     <body> 
-        <form action='bagsnmeals.html' method='POST'>   
+        <form action='passenger.html' method='POST'>   
         {% csrf_token %}
         {% for flight in departs %}
             {% if flight.dep_id == from and flight.arr_id == to %}
@@ -104,44 +104,7 @@
                 </div>
             {% endif %}   
         {% endfor %}
-        <h3 style= "color:white">Do you wish to add meals?<h3>
-            <button type="submit" class="btn">Add meals</button>
+        <button type="submit">Proceed to fill passenger details</button>
         </form>
-
-        <button class="open-button" onclick="openForm()">Proceed to fill Passenger details</button>
-
-<div class="form-popup" id="myForm">
-  <form class="form-container" method="POST">
-    {% csrf_token %}
-    <h2>ADD PASSENGER DETAILS</h2>
-
-            <label for="firstname"><b>First Name (& Middle name if any)</b></label>
-            <input type="text" placeholder="Enter First Name" name="email" required>
-            
-            <label for="psw"><b>Last Name</b></label>
-            <input type="text" placeholder="Enter Last Name" name="psw" required>
-
-            <label for="firstname"><b>Adhaar Number</b></label>
-            <input type="text" placeholder="Enter Adhaar Number" name="email" required>
-
-            <label for="firstname"><b>Phone Number</b></label>
-            <input type="text" placeholder="Enter Phone Number" name="email" required>
-
-            
-            <h3>To add another passenger click on continue<h3>
-            <button type="submit" class="btn">Continue</button>
-            <button type="button" class="btn cancel" onclick="closeForm()">Cancel</button>
-
-        </form>
-        </div>
-        <script>
-        function openForm() {
-        document.getElementById("myForm").style.display = "block";
-        }
-
-        function closeForm() {
-        document.getElementById("myForm").style.display = "none";
-        }
-        </script>
     </body>
 </html>

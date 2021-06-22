@@ -30,8 +30,13 @@ def searchflight(request):
         "departs": Departs.objects.all(),"from":fcity,"to":tcity, "fl":flights.objects.all(),
     })
 
+def passenger(request):    
+    if request.method=='POST':
+        global cost
+        cost = request.POST.get('choice')
+    return render(request,'passenger.html',{"count":n})
+
 def transaction(request):
-    
     if request.method=='POST':
         i=request.POST.get('idli')
         c=request.POST.get('chinese')
@@ -41,9 +46,10 @@ def transaction(request):
         p=request.POST.get('pizza')
     total=(int(cost))*(int(n))
     tma=int(i)*400+int(c)*300+int(m)*120+int(t)*420+int(it)*500+int(p)*800
-    return render(request,'transaction.html',{ "amt":total,"meal_price":tma,
+    return render(request,'transaction.html',{"amt":total, "meal_price":tma,
          
     })
+
 
 def list(request):
     return render(request,'firstpage.html',{
@@ -82,8 +88,14 @@ def sign(request):
 
 def bagsnmeals(request):
     if request.method=='POST':
-        global cost
-        cost = request.POST.get('choice')
+        f=request.POST.get('firstname')
+        l=request.POST.get('lastname')
+        a=request.POST.get('aadhar')
+        p=request.POST.get('phone')
+        cursor=connection.cursor()
+        cursor.execute('INSERT INTO ssdd_variance_passenger (first,last,adhaar_no,phone_no) VALUES (%s,%s,%s,%s)',[f,l,a,p])
+        connection.commit()
+        connection.close()  
     return render(request,'bagsnmeals.html')
 def faq(request):
     return render(request,'faq.html')

@@ -1,0 +1,19 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Search Flight</title>
+        <link rel="stylesheet" href="{% static 'loginstyle.css' %}">
+    </head>
+    <body>
+        <form action='bagsnmeals.html' method='POST'>
+            {% csrf_token %}
+            <div class='bg-text' style="position: absolute;">
+                First Name: <input type="text" placeholder="Enter First Name" name="firstname"><br></br>
+                Last Name:  <input type="text" placeholder="Enter Last Name" name="lastname"><br></br>
+                Aadhar Number: <input type="text" placeholder="Enter Adhaar Number" name="aadhar"><br></br>
+                Phone Number:  <input type="text" placeholder="Enter Phone Number" name="phone">
+            </div>
+            <button type='submit'>Add meals</button>
+        </form>
+    </body>
