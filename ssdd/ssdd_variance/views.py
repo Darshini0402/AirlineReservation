@@ -26,6 +26,8 @@ def searchflight(request):
         tcity = request.POST.get('tocities')
         global n
         n = request.POST.get('count')
+        global date
+        date = request.POST.get('deptdate')
     return render(request,'searchflight.html',{
         "departs": Departs.objects.all(),"from":fcity,"to":tcity, "fl":flights.objects.all(),
     })
@@ -33,7 +35,9 @@ def searchflight(request):
 def passenger(request):    
     if request.method=='POST':
         global cost
-        cost = request.POST.get('choice')
+        cost = request.POST.get('cl')
+        global flight
+        flight = request.POST.get('choice')
     return render(request,'passenger.html',{"count":n})
 
 def transaction(request):
@@ -46,6 +50,8 @@ def transaction(request):
         p=request.POST.get('pizza')
     total=(int(cost))*(int(n))
     tma=int(i)*400+int(c)*300+int(m)*120+int(t)*420+int(it)*500+int(p)*800
+    global totcost
+    totcost = total+tma
     return render(request,'transaction.html',{"amt":total, "meal_price":tma,
          
     })
@@ -101,10 +107,11 @@ def faq(request):
     return render(request,'faq.html')
 def aboutus(request):
     return render(request,'aboutus.html')
-
 def Login(request):
     return render(request,'Login.html')
 def User(request):
     return render(request,'User.html')
+def ticket(request):
+    return render(request,'ticket.html',{"date":date,"cost":totcost,"flight":flight})
 
 

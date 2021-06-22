@@ -18,4 +18,5 @@ urlpatterns = [
     path('faq.html', views.faq,name='faq'),
     path('bagsnmeals.html', views.bagsnmeals,name='bagsnmeals'),
     path('aboutus.html', views.aboutus,name='aboutus'),
+    path('ticket.html',views.ticket,name='ticket'),
 ]
