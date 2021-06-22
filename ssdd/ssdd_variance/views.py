@@ -77,9 +77,11 @@ def transaction(request):
     tma=int(i)*400+int(c)*300+int(m)*120+int(t)*420+int(it)*500+int(p)*800
     global totcost
     totcost = total+tma
+    global tick
+    tick=int("602021"+a[:3])
     cursor=connection.cursor()
     #cursor.execute("CREATE SEQUENCE ticketno INCREMENT BY 1 START WITH 602021101 MINVALUE 602021101 MAXVALUE 6000000000 CYCLE CACHE 20;")
-    cursor.execute("INSERT INTO ssdd_variance_ticket VALUES (%s,%s,%s,%s,%s,%s,%s,%s)",[1,111,f,flight,arr,dep,sh,totcost])
+    cursor.execute("INSERT INTO ssdd_variance_ticket (ticketno,adhaarno_id,passengername,flight_no_id,arrival_time,departure_time,date,ticket_cost) VALUES (%s,%s,%s,%s,%s,%s,%s,%s)",[tick,a,f,flight,arr,dep,sh,totcost])
     connection.commit()
     connection.close()
     return render(request,'transaction.html',{"amt":total, "meal_price":tma, 
@@ -130,6 +132,8 @@ def Login(request):
 def User(request):
     return render(request,'User.html')
 def ticket(request):
-    return render(request,'ticket.html',{"date":sh,"cost":totcost,"flight":flight,"arr":arr,"dep":dep})
+    return render(request,'ticket.html',{
+        "date":sh,"cost":totcost,"flight":flight,"arr":arr,"dep":dep,"fname":f,"lname":l,"ticket":tick
+        })
 
 
