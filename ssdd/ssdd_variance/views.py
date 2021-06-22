@@ -46,6 +46,7 @@ def transaction(request):
         p=request.POST.get('pizza')
     total=(int(cost))*(int(n))
     tma=int(i)*400+int(c)*300+int(m)*120+int(t)*420+int(it)*500+int(p)*800
+    
     return render(request,'transaction.html',{"amt":total, "meal_price":tma,
          
     })

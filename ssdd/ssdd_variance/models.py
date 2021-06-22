@@ -43,4 +43,14 @@ class Passenger(models.Model):
         first = models.CharField(max_length=64)
         last = models.CharField(max_length=64)
         phone_no=models.CharField(max_length=64)
+
+class ticket(models.Model):
+    ticketno=models.CharField(max_length=7,primary_key=True)
+    passengername=models.CharField(max_length=64)  
+    flight_no=models.ForeignKey(flights,on_delete=models.CASCADE, related_name='flno')
+    arrival_time=models.CharField(max_length=20)
+    departure_time=models.CharField(max_length=20)
+    date=models.DateField()
+    ticket_cost=models.IntegerField()
+
     
