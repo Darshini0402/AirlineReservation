@@ -87,10 +87,10 @@
                         Departure Time : {{ flight.departure_time }} Arrival Time : {{ flight.arrival_time }}<br></br>
                         {% for f in fl%}
                             {% if f.origin_id == from and f.destination_id == to %}
-                                <input type="radio" name="choice" value="{{ f.flight_no }}" > Economy : Rs.{{ f.economy }}<br></br>
-                                <label for="choice_{{ flight.flight_no }}">{{ choice.flight_no_id }}</label>
-                                <input type="radio" name="cl" value="{{ f.business }}" id="cl_{{ flight.flight_no }}">  Business : Rs.{{ f.business }}<br></br>
+                                <input type="radio" name="cl" value="{{ f.business }}" id="cl_{{ flight.flight_no }}">  Economy <br></br>
                                 <label for="cl_{{ flight.flight_no }}">{{ cl.economy }}</label>
+                                <input type="radio" name="choice" value="{{ flight.sno }}" > Economy : Rs.{{ f.economy }}<br></br>
+                                <label for="choice_{{ flight.flight_no }}">{{ choice.flight_no }}</label>
                                 {% endif %}
                         {% endfor %}
                 </div>
@@ -99,10 +99,10 @@
                         Departure Time : {{ flight.departure_time }} Arrival Time : {{ flight.arrival_time }}<br></br>
                         {% for f in fl%}
                             {% if f.origin_id == from and f.destination_id == to %}
-                                <input type="radio" name="choice" value="{{ f.flight_no }}" >  Business : Rs.{{ f.business }}<br></br>
-                                <label for="choice_{{ flight.flight_no }}">{{ choice.flight_no_id }}</label>
-                                <input type="radio" name="cl" value="{{ f.business }}" id="cl_{{ flight.flight_no }}">  Business : Rs.{{ f.business }}<br></br>
+                                <input type="radio" name="cl" value="{{ f.business }}" id="cl_{{ flight.flight_no }}">  Business <br></br>
                                 <label for="cl_{{ flight.flight_no }}">{{ cl.business }}</label>
+                                <input type="radio" name="choice" value="{{ flight.sno }}" >  Business : Rs.{{ f.business }}<br></br>
+                                <label for="choice_{{ flight.flight_no }}">{{ choice.flight_no }}</label>
                                 {% endif %}
                         {% endfor %}
                 </div>

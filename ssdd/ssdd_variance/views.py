@@ -26,18 +26,43 @@ def searchflight(request):
         tcity = request.POST.get('tocities')
         global n
         n = request.POST.get('count')
-        global date
-        date = request.POST.get('deptdate')
+        global sh
+        sh = request.POST.get('deptdate')
     return render(request,'searchflight.html',{
         "departs": Departs.objects.all(),"from":fcity,"to":tcity, "fl":flights.objects.all(),
     })
+
+def bagsnmeals(request):
+    if request.method=='POST':
+        global f,l
+        f=request.POST.get('firstname')
+        l=request.POST.get('lastname')
+        global a
+        a=request.POST.get('aadhar')
+        p=request.POST.get('phone')
+        cursor=connection.cursor()
+        cursor.execute('INSERT INTO ssdd_variance_passenger (first,last,adhaar_no,phone_no) VALUES (%s,%s,%s,%s)',[f,l,a,p])
+        connection.commit()
+        connection.close()  
+    return render(request,'bagsnmeals.html')
 
 def passenger(request):    
     if request.method=='POST':
         global cost
         cost = request.POST.get('cl')
+        slno = request.POST.get('choice')
+        slno=int(slno)
+        cursor=connection.cursor()
+        cursor.execute("SELECT arrival_time, departure_time, flight_no_id FROM ssdd_variance_departs WHERE sno LIKE %s",(slno,))
+        result = cursor.fetchall()
         global flight
-        flight = request.POST.get('choice')
+        flight=result[0][2]
+        global arr
+        arr = result[0][0]
+        global dep
+        dep = result[0][1] 
+        connection.commit()
+        connection.close()  
     return render(request,'passenger.html',{"count":n})
 
 def transaction(request):
@@ -52,8 +77,12 @@ def transaction(request):
     tma=int(i)*400+int(c)*300+int(m)*120+int(t)*420+int(it)*500+int(p)*800
     global totcost
     totcost = total+tma
-    return render(request,'transaction.html',{"amt":total, "meal_price":tma,
-         
+    cursor=connection.cursor()
+    #cursor.execute("CREATE SEQUENCE ticketno INCREMENT BY 1 START WITH 602021101 MINVALUE 602021101 MAXVALUE 6000000000 CYCLE CACHE 20;")
+    cursor.execute("INSERT INTO ssdd_variance_ticket VALUES (%s,%s,%s,%s,%s,%s,%s,%s)",[1,a,f,flight,arr,dep,sh,totcost])
+    connection.commit()
+    connection.close()
+    return render(request,'transaction.html',{"amt":total, "meal_price":tma, 
     })
 
 
@@ -92,17 +121,6 @@ def logout_view(request):
 def sign(request):
     return render(request,'sign.html')   
 
-def bagsnmeals(request):
-    if request.method=='POST':
-        f=request.POST.get('firstname')
-        l=request.POST.get('lastname')
-        a=request.POST.get('aadhar')
-        p=request.POST.get('phone')
-        cursor=connection.cursor()
-        cursor.execute('INSERT INTO ssdd_variance_passenger (first,last,adhaar_no,phone_no) VALUES (%s,%s,%s,%s)',[f,l,a,p])
-        connection.commit()
-        connection.close()  
-    return render(request,'bagsnmeals.html')
 def faq(request):
     return render(request,'faq.html')
 def aboutus(request):
@@ -112,6 +130,6 @@ def Login(request):
 def User(request):
     return render(request,'User.html')
 def ticket(request):
-    return render(request,'ticket.html',{"date":date,"cost":totcost,"flight":flight})
+    return render(request,'ticket.html',{"date":sh,"cost":totcost,"flight":flight,"arr":arr,"dep":dep})
 
 
