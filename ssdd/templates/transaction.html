@@ -10,10 +10,10 @@
       content="width=device-width,
                initial-scale=1.0"/>
     <style>
-     {
+     /* {
   margin: 0;
   padding: 0;
-}
+} */
   
 body {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
@@ -142,9 +142,10 @@ body {
         </button> -->
       </div>
   
-      <div class="card-details">
+      <form action='ticket.html' method="POST">
+        {% csrf_token %}
+    <div class="card-details">
         <p>Pay using Credit or Debit card</p>
-  
         <div class="card-number">
           <label> Card Number </label>
           <input
@@ -175,6 +176,8 @@ body {
                 class="submit-now-btn">
           submit
         </button>
+      </form>
+        </div>
       </div>
     </div>
   </body>

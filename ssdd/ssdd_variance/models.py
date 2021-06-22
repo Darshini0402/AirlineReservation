@@ -43,7 +43,6 @@ class Passenger(models.Model):
         first = models.CharField(max_length=64)
         last = models.CharField(max_length=64)
         phone_no=models.CharField(max_length=64)
-
 class ticket(models.Model):
     ticketno=models.CharField(max_length=7,primary_key=True)
     passengername=models.CharField(max_length=64)  
