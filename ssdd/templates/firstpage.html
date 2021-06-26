@@ -48,7 +48,7 @@
          <div class="info">
                 <h1 style="font-size:75px;font-family: 'Times New Roman', Times, serif;color: black; text-align: center;">VARIANCE AIRLINES</h1>
                 <table style="padding-left:585px;padding-bottom: 350px;"></table>
-                <table style="position: absolute; text-align: center;bottom: -150px;width: 100%;color: whitesmoke;">
+                <table style="position: absolute; text-align: center;bottom: -180px;width: 100%;color: whitesmoke;">
                     <th class="dev_info" onclick="contact()" style="color: whitesmoke;"><u>Contact Us</u></th>
                     <th class="dev_info" style="color: whitesmoke;"><a href="faq.html" style="color: whitesmoke;">FAQ</a></th>
                     <th class="dev_info" style="color: whitesmoke;"><a href='aboutus.html' style="color: whitesmoke">About Us</a></th>
@@ -58,7 +58,7 @@
                     
                     <button style="font-size:15px;" class="tablinks" onclick="openCity(event, 'Edit Booking')">Edit Booking</button>
                 </div>
-                <div id="Book Flight" class="tabcontent" style="text-align:center;width: 40%; right:210px;left:390px;bottom:-70px;">
+                <div id="Book Flight" class="tabcontent" style="text-align:center;width: 40%; right:210px;left:390px;bottom:-90px;">
                     <form method="POST" action="searchflight.html">
                         {% csrf_token %}   
                         <h1 style="font-weight:200px;font-size:larger;"><u>From</u></h1>
@@ -84,22 +84,22 @@
                         <input id = "ExpiryDate" type='date' name="deptdate" /><br> 
                         <h1 style="font-weight:200px;font-size:larger;"><u>Passenger</u></h1> 
                         <input type="number" min="1" value="1" placeholder="Number of Passenger" name="count">  
-                        <button input type="submit">Search Flight</button>
+                        <button input type="submit"class="hi">Search Flight</button>
                     </div>
                 </form>
                 <html>              
-              <div id="Edit Booking" class="tabcontent" style="text-align:center;bottom:-5px;background-color: rgba(173, 138, 22, 0.842);position:absolute;display:none;width: 35%; right:450px;">
+              <div id="Edit Booking" class="tabcontent" style="text-align:center;bottom:5px;top:350px;background-color: rgba(209, 178, 42, 0.521);;position:absolute;display:none;width: 35%; right:450px;">
                     <h1 style="font-weight:200px;font-size:larger;"><u>Edit Booking</u></h1>
                     <input type="text" placeholder="Ticket number">
                     <br><br>
-                    <button style="font-size:15px;">Change Booking</button><br><br>
+                    <button class="het" style="font-size:15px;">Change Booking</button><br><br>
                     <a href='bagsnmeals.html'>
-                    <button style="font-size:15px;">Add Services</button><br><br></a>
+                    <button class="het" style="font-size:15px;">Add Services</button><br><br></a>
                     <div id="Add Services" class="tabcontent" style="text-align:center;width: 35%; right:440px">
                     <h1 style="font-weight:200px;font-size:larger;"><u>Add Services</u></h1>
                     
                     </div>
-                     <button style="font-size:15px;" class='cancel' onclick='confirm("Press OK to cancel your ticket")'>Cancel Booking</button> <br><br>
+                     <button class="het" style="font-size:15px;"  class='cancel' onclick='confirm("Press OK to cancel your ticket")'>Cancel Booking</button> <br><br>
                 </div>
                 
                         

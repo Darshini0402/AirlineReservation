@@ -55,7 +55,7 @@
 
     /* Style the tab content */
     .tabcontent {
-        background-color:rgba(173, 138, 22, 0.842);
+        background-color:rgba(209, 178, 42, 0.521);
     display:none;
     width:95.5%;
     height:300px;
@@ -294,3 +294,18 @@ td {
           .pad{
             padding:100px;
           }   
+          .w3-button {
+            border: none;
+            outline: 0;
+            display: inline-block;
+            padding: 1px;
+            font-size: 20px;
+            font-family: 'Times New Roman', Times, serif;
+            color:blue;
+            background-color:rgb(76, 172, 135);
+            text-align: center;
+            cursor: pointer;
+            width: 20%;
+            height:80%;
+            padding-block: 10px;
+          }
