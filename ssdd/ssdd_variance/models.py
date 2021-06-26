@@ -1,3 +1,4 @@
+from django.contrib import admin
 from django.db import models
 from django.contrib.auth.models import User
 # Create your models here.
@@ -45,7 +46,8 @@ class Passenger(models.Model):
         phone_no=models.CharField(max_length=64)
 
 class ticket(models.Model):
-    ticketno=models.CharField(max_length=7,primary_key=True)
+    ticketno=models.CharField(max_length=7,primary_key=True,)
+    bdate=models.IntegerField()
     adhaarno=models.ForeignKey(Passenger,on_delete=models.CASCADE, related_name='adno')
     passengername=models.CharField(max_length=64)  
     flight_no=models.ForeignKey(flights,on_delete=models.CASCADE, related_name='flno')
@@ -53,5 +55,4 @@ class ticket(models.Model):
     departure_time=models.CharField(max_length=20)
     date=models.DateField()
     ticket_cost=models.IntegerField()
-
-    
+   

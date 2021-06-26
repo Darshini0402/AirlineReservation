@@ -79,9 +79,11 @@ def transaction(request):
     totcost = total+tma
     global tick
     tick=int("602021"+a[:3])
+    global da
+    da=date.today()
     cursor=connection.cursor()
     #cursor.execute("CREATE SEQUENCE ticketno INCREMENT BY 1 START WITH 602021101 MINVALUE 602021101 MAXVALUE 6000000000 CYCLE CACHE 20;")
-    cursor.execute("INSERT INTO ssdd_variance_ticket (ticketno,adhaarno_id,passengername,flight_no_id,arrival_time,departure_time,date,ticket_cost) VALUES (%s,%s,%s,%s,%s,%s,%s,%s)",[tick,a,f,flight,arr,dep,sh,totcost])
+    cursor.execute("INSERT INTO ssdd_variance_ticket (ticketno,adhaarno_id,passengername,flight_no_id,arrival_time,departure_time,date,ticket_cost,bdate) VALUES (%s,%s,%s,%s,%s,%s,%s,%s,%s)",[tick,a,f,flight,arr,dep,sh,totcost,da])
     connection.commit()
     connection.close()
     return render(request,'transaction.html',{"amt":total, "meal_price":tma, 
