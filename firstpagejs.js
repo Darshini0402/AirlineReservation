@@ -18,7 +18,7 @@ function openCity(evt, cityName) {
     document.getElementById("defaultOpen").click(); 
     function contact()
     {
-        alert("Feel free to call or message anytime:\nDarshini:+919840336198\nDikshita:+918130263296\nShubhangi: +917479577601\nSreelakshmi: +971566428580");
+        alert("Feel free to call or message anytime:\nDarshini:+9198XXXXXXXX\nDikshita:+9181XXXXXXXX\nShubhangi: +9174XXXXXXXX\nSreelakshmi: +971XXXXXXXX");
     }
     var today = new Date().toISOString().split('T')[0];
     document.getElementsByName("somedate")[0].setAttribute('min', today);
